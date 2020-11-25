@@ -1,0 +1,27 @@
+baseURL = "https://example.com"
+title = "ret2school"
+themesDir = "themes/"
+theme = "m10c"
+paginate = 5
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+
+[params]
+  avatar = "pic.jpeg"
+  author = "nasm"
+  description = "Just a bunch of french ctf players"
+  menu_item_separator = " / "
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/ret2school"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/nasm_re"
