@@ -1,8 +1,8 @@
-baseURL = "https://example.com"
+baseURL = "https://ret2school.github.io"
 title = "ret2school"
 themesDir = "themes/"
 theme = "m10c"
-paginate = 5
+paginate = 12
 
 [menu]
   [[menu.main]]
@@ -25,3 +25,17 @@ paginate = 5
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/nasm_re"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4

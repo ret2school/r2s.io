@@ -2,29 +2,286 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ret2school</title>
-    <link>https://example.com/tags/</link>
+    <link>https://ret2school.github.io/tags/</link>
     <description>Recent content in Tags on ret2school</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Mar 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hugo</title>
-      <link>https://example.com/tags/hugo/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>ctf</title>
+      <link>https://ret2school.github.io/tags/ctf/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://ret2school.github.io/tags/ctf/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>jekyll</title>
-      <link>https://example.com/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>JWT</title>
+      <link>https://ret2school.github.io/tags/jwt/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/jekyll/</guid>
+      <guid>https://ret2school.github.io/tags/jwt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ret2school</title>
+      <link>https://ret2school.github.io/tags/ret2school/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/ret2school/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tek</title>
+      <link>https://ret2school.github.io/tags/tek/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/tek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://ret2school.github.io/tags/web/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aaSSfxxx</title>
+      <link>https://ret2school.github.io/tags/aassfxxx/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/aassfxxx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anti debug</title>
+      <link>https://ret2school.github.io/tags/anti-debug/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/anti-debug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>https://ret2school.github.io/tags/powershell/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RC4</title>
+      <link>https://ret2school.github.io/tags/rc4/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/rc4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RE</title>
+      <link>https://ret2school.github.io/tags/re/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/re/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSA</title>
+      <link>https://ret2school.github.io/tags/rsa/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/rsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>supersnail</title>
+      <link>https://ret2school.github.io/tags/supersnail/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/supersnail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unionctf 2021</title>
+      <link>https://ret2school.github.io/tags/unionctf-2021/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/unionctf-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buffer overflow</title>
+      <link>https://ret2school.github.io/tags/buffer-overflow/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/buffer-overflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nasm</title>
+      <link>https://ret2school.github.io/tags/nasm/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/nasm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pwn</title>
+      <link>https://ret2school.github.io/tags/pwn/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/pwn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fofo</title>
+      <link>https://ret2school.github.io/tags/fofo/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/fofo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>forensic</title>
+      <link>https://ret2school.github.io/tags/forensic/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/forensic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hitcon</title>
+      <link>https://ret2school.github.io/tags/hitcon/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/hitcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HitconCTF</title>
+      <link>https://ret2school.github.io/tags/hitconctf/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/hitconctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HitconCTF 2020</title>
+      <link>https://ret2school.github.io/tags/hitconctf-2020/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/hitconctf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zeynn</title>
+      <link>https://ret2school.github.io/tags/zeynn/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/zeynn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aero CTF 2020</title>
+      <link>https://ret2school.github.io/tags/aero-ctf-2020/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/aero-ctf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AeroCTF</title>
+      <link>https://ret2school.github.io/tags/aeroctf/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/aeroctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reverse engineering</title>
+      <link>https://ret2school.github.io/tags/reverse-engineering/</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crack the heart</title>
+      <link>https://ret2school.github.io/tags/crack-the-heart/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/crack-the-heart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UTCTF</title>
+      <link>https://ret2school.github.io/tags/utctf/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/utctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSAW</title>
+      <link>https://ret2school.github.io/tags/csaw/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/csaw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSAW CTF 2020</title>
+      <link>https://ret2school.github.io/tags/csaw-ctf-2020/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/csaw-ctf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r0da</title>
+      <link>https://ret2school.github.io/tags/r0da/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/r0da/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>members</title>
+      <link>https://ret2school.github.io/tags/members/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/tags/members/</guid>
       <description></description>
     </item>
     

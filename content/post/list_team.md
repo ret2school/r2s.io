@@ -1,7 +1,7 @@
 +++
 title = "Team introduction"
 tags = ["ctf", "ret2school", "members"]
-date = "2020-11-25"
+date = "2020-02-25"
 +++
 
 ## Members
@@ -12,9 +12,9 @@ The [team](https://ctftime.org/team/111931) is composed of:
 - [supersnail](http://aassfxxx.infos.st/) (chad reverser)
 - [Zeynn](https://github.com/Zeynn1) (18 yo, web/steg/cypto)
 - [x.](https://github.com/SofianeELHOR) (the Guesser, the carry-er)
-- Tek
+- [Tek](https://twitter.com/Tek_7987)
 - 0xPierre
-- r0da
-- op
+- [r0da](https://whereisr0da.github.io/blog/) (RE stuff)
+- [op](https://github.com/0poss) (pwn/RE, a little bit of everything :) )
 - look
-- Lime
+- [Ast4te](https://www.root-me.org/Ast4te)
