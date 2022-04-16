@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>[Unionctf 2021 - pwn] babyrarf // ret2school</title>
+    <title>[UnionCTF 2021 - pwn] babyrarf // ret2school</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.81.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,15 +10,30 @@
     <link rel="stylesheet" href="https://ret2school.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
 
     
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8K5XT0SJN8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[Unionctf 2021 - pwn] babyrarf"/>
-<meta name="twitter:description" content="Welcome guys,
+<meta name="twitter:title" content="[UnionCTF 2021 - pwn] babyrarf"/>
+<meta name="twitter:description" content="The binary can be found right here.
+[UnionCTF] Babyrarf Welcome guys,
 This Write-Up is about de first pwn challenge of unionctf: babyrarf. It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).
 Let&rsquo;s take a look at the src!
 #include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;stdint.h&gt;#include &lt;unistd.h&gt; typedef struct attack { uint64_t id; uint64_t dmg; } attack; typedef struct character { char name[10]; int health; } character; uint8_t score; int read_int(){ char buf[10]; fgets(buf, 10, stdin); return atoi(buf); } void get_shell(){ execve(&#34;/bin/sh&#34;, NULL, NULL); } attack choose_attack(){ attack a; int id; puts(&#34;Choose an attack:\n&#34;); puts(&#34;1."/>
 
-    <meta property="og:title" content="[Unionctf 2021 - pwn] babyrarf" />
-<meta property="og:description" content="Welcome guys,
+    <meta property="og:title" content="[UnionCTF 2021 - pwn] babyrarf" />
+<meta property="og:description" content="The binary can be found right here.
+[UnionCTF] Babyrarf Welcome guys,
 This Write-Up is about de first pwn challenge of unionctf: babyrarf. It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).
 Let&rsquo;s take a look at the src!
 #include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;stdint.h&gt;#include &lt;unistd.h&gt; typedef struct attack { uint64_t id; uint64_t dmg; } attack; typedef struct character { char name[10]; int health; } character; uint8_t score; int read_int(){ char buf[10]; fgets(buf, 10, stdin); return atoi(buf); } void get_shell(){ execve(&#34;/bin/sh&#34;, NULL, NULL); } attack choose_attack(){ attack a; int id; puts(&#34;Choose an attack:\n&#34;); puts(&#34;1." />
@@ -48,7 +63,7 @@ Let&rsquo;s take a look at the src!
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 </svg></a>
         
-          <a target="_blank" href="https://twitter.com/nasm_re" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+          <a target="_blank" href="https://twitter.com/ret2school_fr" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
   <title>twitter</title>
   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
 </svg></a>
@@ -59,7 +74,7 @@ Let&rsquo;s take a look at the src!
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">[Unionctf 2021 - pwn] babyrarf</h1>
+      <h1 class ="post-title">[UnionCTF 2021 - pwn] babyrarf</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -83,11 +98,14 @@ Let&rsquo;s take a look at the src!
               <a class="tag" href="https://ret2school.github.io/tags/ctf/">ctf</a>
               <a class="tag" href="https://ret2school.github.io/tags/pwn/">pwn</a>
               <a class="tag" href="https://ret2school.github.io/tags/nasm/">nasm</a>
+              <a class="tag" href="https://ret2school.github.io/tags/2021/">2021</a>
         </div>
       </div>
     </header>
     <div class="post-content">
-      <p>Welcome guys,</p>
+      <p>The binary can be found <a href="https://github.com/ret2school/ctf/blob/master/2021/unionctf/pwn/babyrarf/babyrarf?raw=true">right here</a>.</p>
+<h2 id="unionctf-babyrarf">[UnionCTF] Babyrarf</h2>
+<p>Welcome guys,</p>
 <p>This Write-Up is about de first pwn challenge of <a href="https://ctf.cr0wn.uk">unionctf</a>: <a href="">babyrarf</a>.
 It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).</p>
 <p>Let&rsquo;s take a look at the src!</p>
@@ -383,7 +401,8 @@ Congratulations! You may now declare yourself the winner:
 [*] Switching to interactive mode
 $ cat /home/babyrarf/flag.txt
 union{baby_rarf_d0o_d00_do0_doo_do0_d0o}
-</code></pre><p>That&rsquo;s all folks :)</p>
+</code></pre><p>The final script can be found <a href="https://github.com/ret2school/ctf/blob/master/2021/unionctf/pwn/babyrarf/p0wn.py">here</a>.</p>
+<p>That&rsquo;s all folks :)</p>
 
     </div>
     <div class="post-footer">

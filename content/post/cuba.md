@@ -1,6 +1,6 @@
 +++
 title = "[CSAW CTF 2020 - RE] Cuba"
-tags = ["ctf", "ret2school", "CSAW", "CSAW CTF 2020", "reverse engineering", "RE", "r0da"]
+tags = ["ctf", "ret2school", "CSAW", "CSAW CTF 2020", "reverse engineering", "RE", "r0da", "2021"]
 date =  "2020-09-13" 
 +++
 

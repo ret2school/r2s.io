@@ -5,14 +5,77 @@
     <link>https://ret2school.github.io/tags/nasm/</link>
     <description>Recent content in nasm on ret2school</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/nasm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/nasm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Unionctf 2021 - pwn] babyrarf</title>
+      <title>[Breizh CTF 2022 - pwn] Faible Ty Reseau</title>
+      <link>https://ret2school.github.io/post/ftm/</link>
+      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/ftm/</guid>
+      <description>Faible Ty Réseau is a basic heap-like challenge, it allows us to create a configuration, edit it, call a function pointer on it and finally to free it:
+int __cdecl main(int argc, const char **argv, const char **envp) { int v4; // [rsp+4h] [rbp-Ch] BYREF  unsigned __int64 v5; // [rsp+8h] [rbp-8h]  v5 = __readfsqword(0x28u); while ( 1 ) { puts(aVousN); printf(a1ModifierLesPa, argv); fflush(stdout); v4 = 0; argv = &amp;amp;v4; __isoc99_scanf(&amp;amp;unk_21F3, &amp;amp;v4); switch ( v4 ) { case 0: printf(&amp;#34;wtf ?</description>
+    </item>
+    
+    <item>
+      <title>[TRACS 2021 - RE] Coffre</title>
+      <link>https://ret2school.github.io/post/safe/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/safe/</guid>
+      <description>Intro  Epreuve 12-3 – Coffre En tant que stagiaire vous avez accès aux locaux de la NSB. Vous allez collecter des informations dans les locaux. Un coffre est présent dans les locaux en salle rideau. Il appartient à Richard Cresus de la Tune. Essayez d’ouvrir ce coffre. Quel est l’IBAN contenu dans le coffre ? Format de la réponse : IBAN sans séparateur.
+ Basically, we have to crack open an electronic safe.</description>
+    </item>
+    
+    <item>
+      <title>[Hack.lu 2021 - pwn] Cloudinspect</title>
+      <link>https://ret2school.github.io/post/cloudinspect/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cloudinspect/</guid>
+      <description>CloudInspect CloundInpect was a hypervisor exploitation challenge I did for the Hack.lu event. I didn&amp;rsquo;t succeed to flag it within the 48 hours :(. But anyway I hope this write up will be interesting to read! The related files can be found right here
+ After Whiterock released it&amp;rsquo;s trading bot cloud with special Stonks Sockets another hedge fund, Castel, comes with some competition. The special feature here is called &amp;ldquo;cloudinspect&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>[ASIS CTF QUALS 2021 - pwn] abbr &amp; justpwnit</title>
+      <link>https://ret2school.github.io/post/pwnasis/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/pwnasis/</guid>
+      <description>Hello folks ! Here is a write up for the two first pwn challenges of the ASIS CTF. You can find the related files here.
+justpwnit justpwnit was a warmup pwn challenge. That&amp;rsquo;s only a basic stack overflow. The binary is statically linked and here is the checksec&amp;rsquo;s output:
+[*] &#39;/home/nasm/justpwnit&#39; Arch: amd64-64-little RELRO: Partial RELRO Stack: No canary found NX: NX enabled PIE: No PIE (0x400000) Morever the source code is provided as it is the case for all the pwn tasks !</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Blind Date</title>
+      <link>https://ret2school.github.io/post/blindate/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/blindate/</guid>
+      <description>Blind Date (489 pts)  Une société souhaite créer un service en ligne protégeant les informations de ses clients. Pouvez-vous leur montrer qu&amp;rsquo;elle n&amp;rsquo;est pas sûre en lisant le fichier flag.txt sur leur serveur ? Les gérants de cette société n&amp;rsquo;ont pas souhaité vous donner ni le code source de leur solution, ni le binaire compilé, mais ils vous proposent uniquement un accès distant à leur service.
+  nc challenges2.</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Itsy Mipsy router</title>
+      <link>https://ret2school.github.io/post/mipsy/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/mipsy/</guid>
+      <description>Itsy Mipsy Router (200 pts) Itsy Mipsy Router is a pwn challenge I did during the FCSC event. It&amp;rsquo;s not a very hard challenge but I found it very interesting because it was my first mips pwn challenge !
+Setup So basically we got this:
+ On vous demander d&amp;rsquo;auditer un routeur à l&amp;rsquo;interface entre Internet et un réseau interne d&amp;rsquo;une entreprise. Le client vous demande si il est possible de lire les fichiers stockés sur la machine filer qui sert de serveur de fichiers HTTP.</description>
+    </item>
+    
+    <item>
+      <title>[UnionCTF 2021 - pwn] babyrarf</title>
       <link>https://ret2school.github.io/post/babyrarf/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ret2school.github.io/post/babyrarf/</guid>
-      <description>Welcome guys,
+      <description>The binary can be found right here.
+[UnionCTF] Babyrarf Welcome guys,
 This Write-Up is about de first pwn challenge of unionctf: babyrarf. It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).
 Let&amp;rsquo;s take a look at the src!
 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;#include &amp;lt;stdint.h&amp;gt;#include &amp;lt;unistd.h&amp;gt; typedef struct attack { uint64_t id; uint64_t dmg; } attack; typedef struct character { char name[10]; int health; } character; uint8_t score; int read_int(){ char buf[10]; fgets(buf, 10, stdin); return atoi(buf); } void get_shell(){ execve(&amp;#34;/bin/sh&amp;#34;, NULL, NULL); } attack choose_attack(){ attack a; int id; puts(&amp;#34;Choose an attack:\n&amp;#34;); puts(&amp;#34;1.</description>

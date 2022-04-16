@@ -1,8 +1,9 @@
 baseURL = "https://ret2school.github.io"
 title = "ret2school"
-themesDir = "themes/"
 theme = "m10c"
+themesDir = "themes/"
 paginate = 12
+googleAnalytics = "G-8K5XT0SJN8"
 
 [menu]
   [[menu.main]]
@@ -24,7 +25,7 @@ paginate = 12
     url = "https://github.com/ret2school"
   [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/nasm_re"
+    url = "https://twitter.com/ret2school_fr"
 
 [markup]
   [markup.highlight]

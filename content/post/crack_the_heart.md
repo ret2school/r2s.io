@@ -1,6 +1,6 @@
 +++
-title = "[UTCTF 2020] Crack the heart"
-tags = ["ctf", "ret2school", "UTCTF", "Crack the heart", "reverse engineering", "RE", "supersnail", "aaSSfxxx"]
+title = "[UTCTF 2020 - RE] Crack the heart"
+tags = ["ctf", "ret2school", "UTCTF", "Crack the heart", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2020"]
 date = "2020-11-25"
 +++
 

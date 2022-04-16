@@ -1,6 +1,6 @@
 +++
-title = "[Aero CTF 2020] 1000 and 1 night"
-tags = ["ctf", "ret2school", "UTCTF", "Aero CTF 2020", "reverse engineering", "RE", "supersnail", "aaSSfxxx"]
+title = "[AeroCTF 2020 - RE] 1000 and 1 night"
+tags = ["ctf", "ret2school", "Aero CTF 2020", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2020"]
 date = "2020-11-25"
 +++
 

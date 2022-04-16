@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>[UnionCTF - 2021] Cr0wnAir // ret2school</title>
+    <title>[UnionCTF 2021 - web] Cr0wnAir // ret2school</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.81.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,14 +10,27 @@
     <link rel="stylesheet" href="https://ret2school.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
 
     
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[UnionCTF - 2021] Cr0wnAir"/>
-<meta name="twitter:description" content="UnionCTF - Cr0wnAir To solve this challenge, we had to exploit a vulnerability in jpv which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from RS256 to HS256 and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak e.
- The source code of the app is given, so let&rsquo;s take a look at it (only what will be interesting for us) :"/>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8K5XT0SJN8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-    <meta property="og:title" content="[UnionCTF - 2021] Cr0wnAir" />
-<meta property="og:description" content="UnionCTF - Cr0wnAir To solve this challenge, we had to exploit a vulnerability in jpv which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from RS256 to HS256 and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak e.
- The source code of the app is given, so let&rsquo;s take a look at it (only what will be interesting for us) :" />
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[UnionCTF 2021 - web] Cr0wnAir"/>
+<meta name="twitter:description" content="The challenge can be found right here.
+UnionCTF - Cr0wnAir To solve this challenge, we had to exploit a vulnerability in jpv which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from RS256 to HS256 and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak e."/>
+
+    <meta property="og:title" content="[UnionCTF 2021 - web] Cr0wnAir" />
+<meta property="og:description" content="The challenge can be found right here.
+UnionCTF - Cr0wnAir To solve this challenge, we had to exploit a vulnerability in jpv which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from RS256 to HS256 and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ret2school.github.io/post/writeup_cr0wnair/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-02-24T00:00:00&#43;00:00" />
@@ -44,7 +57,7 @@
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 </svg></a>
         
-          <a target="_blank" href="https://twitter.com/nasm_re" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+          <a target="_blank" href="https://twitter.com/ret2school_fr" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
   <title>twitter</title>
   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
 </svg></a>
@@ -55,7 +68,7 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">[UnionCTF - 2021] Cr0wnAir</h1>
+      <h1 class ="post-title">[UnionCTF 2021 - web] Cr0wnAir</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -81,14 +94,13 @@
               <a class="tag" href="https://ret2school.github.io/tags/web/">web</a>
               <a class="tag" href="https://ret2school.github.io/tags/jwt/">JWT</a>
               <a class="tag" href="https://ret2school.github.io/tags/tek/">Tek</a>
-              <a class="tag" href="https://ret2school.github.io/tags/">Tags</a>
         </div>
       </div>
     </header>
     <div class="post-content">
-      <h1 id="unionctf---cr0wnair">UnionCTF - Cr0wnAir</h1>
+      <p>The challenge can be found <a href="https://github.com/ret2school/ctf/tree/master/2021/unionctf/web/cr0wnair/app_src">right here</a>.</p>
+<h1 id="unionctf---cr0wnair">UnionCTF - Cr0wnAir</h1>
 <p>To solve this challenge, we had to exploit a vulnerability in <code>jpv</code> which allows us to bypass the regex validation in order to get a JWT. Then, we were able to change the algorithm from <code>RS256</code> to <code>HS256</code> and forge a new JWT with the public key, a key that we were able to retrieve thanks to a weak <code>e</code>.</p>
-<hr>
 <p>The source code of the app is given, so let&rsquo;s take a look at it (only what will be interesting for us) :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
 <span style="color:#6272a4">// routes/checkin.js
@@ -210,7 +222,8 @@ router.post(<span style="color:#f1fa8c">&#39;/flag&#39;</span>, [getLoyaltyStatu
 module.exports <span style="color:#ff79c6">=</span> router;
 </code></pre></div><p>After the analysis of the source code, we can notice an interesting path : we need to set <code>sssr</code> to <code>FQTU</code> to receive our JWT. And with this JWT, if the <code>status</code> is set to <code>gold</code>, we get the flag.
 However, the data we send to <code>/checkin</code> must check some regex :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">const</span> pattern <span style="color:#ff79c6">=</span> {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#ff79c6">const</span> pattern <span style="color:#ff79c6">=</span> {
   firstName<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">/^\w{1,30}$/</span>,
   lastName<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">/^\w{1,30}$/</span>,
   passport<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">/^[0-9]{9}$/</span>,

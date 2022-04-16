@@ -1,8 +1,12 @@
 +++
-title = "[Unionctf 2021 - pwn] babyrarf"
-tags = ["ctf", "unionctf 2021", "pwn", "buffer overflow", "nasm"]
+title = "[UnionCTF 2021 - pwn] babyrarf"
+tags = ["ctf", "unionCTF 2021", "pwn", "buffer overflow", "nasm", "2021"]
 date = "2021-02-21"
 +++
+
+The binary can be found [right here](https://github.com/ret2school/ctf/blob/master/2021/unionctf/pwn/babyrarf/babyrarf?raw=true).
+
+## [UnionCTF] Babyrarf
 
 Welcome guys, 
 
@@ -326,5 +330,7 @@ Congratulations! You may now declare yourself the winner:
 $ cat /home/babyrarf/flag.txt
 union{baby_rarf_d0o_d00_do0_doo_do0_d0o}
 ```
+
+The final script can be found [here](https://github.com/ret2school/ctf/blob/master/2021/unionctf/pwn/babyrarf/p0wn.py).
 
 That's all folks :)
