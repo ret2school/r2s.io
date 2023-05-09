@@ -187,7 +187,7 @@ I have choosen to target `kmalloc-1024` (`0x100 + 0x10c = 0x20c = 524`) because
 there were no allocation on this cache which makes my exploit more reliable.
 
 As a target structure to leak, I have choosen a `struct pipe_buffer` (thanks to
-https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html#bypassing-kaslrsmep)
+[this](https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html#bypassing-kaslrsmep))
 as it fits in `kmalloc-1024` and contains a pointer to a structure in the
 `.data` segment, allowing us to leak the kernel base address.
 
@@ -206,9 +206,9 @@ for (int i = 0; i < NUM_PIPEFDS; i++) {
 }
 ```
 
-This gives us the following heap layout :
+This gives us the following heap layout:
 
-![Heap layout after spraying `with pipe_buffer` objects.](img/heap_layout.png)
+![Heap layout after spraying `with pipe_buffer` objects.](/images/heap_layout.png)
 
 We now have to read 0x418 bytes to leak `pipe_buffer.ops` and break KASLR.
 
