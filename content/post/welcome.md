@@ -1,7 +1,7 @@
 ---
 title: "[UTCTF 2023] Welcome"
 date: 2023-01-10
-tags: ["ctf", "supersnail", "pwn", "linux", "file stream", "SECCON"]
+tags: ["ctf", "supersnail", "reverse", "avr"]
 ---
 
 
