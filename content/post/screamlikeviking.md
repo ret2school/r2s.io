@@ -23,6 +23,25 @@ This article is a write-up for "Scream Like Viking", a cryptography challenge fr
 
 # Code review
 
+The following source code is given:# [pwnme 2023 - crypto] Scream Like Viking
+
+> Our protagonist John is in a room, he hears some kind of noise, like something resonating.
+> But he doesn't understand it...
+> Perhaps he could play with his own echoes to guess what the meaning of this famous resonance could be...
+> 
+> `nc 51.68.95.78 32773`
+
+<center><img alt="Shout Like Dovahkiin > Scream Like Viking" src="https://media.tenor.com/O8zaeaYI8NkAAAAd/fus-roh-dah-skyrim.gif"></center>
+
+This article is a write-up for "Scream Like Viking", a cryptography challenge from PwnMe 2023.
+
+# TL;DR
+
+- Get pairs of `(C, N)` where `N` is recovered by taking GCD of multiple `M^e - C`
+- Håstad's broadcast attack (CRT + `e`-th root) on the pairs of `(C, N)`
+
+# Code review
+
 The following source code is given:
 
 ```py
@@ -83,7 +102,7 @@ C = M^e [N] <=> C + kN = M^e (with k in Z)
 Thus:
 
 ```python
-GCD(M1^e - C1, M1^e - C1) = GCD(k1 * N, k2 * N) = aN
+GCD(M1^e - C1, M2^e - C2) = GCD(k1 * N, k2 * N) = aN
 ```
 
 `a = 1` if `k1` and `k2` are coprime but if they aren't we can repeat the operation with new pairs of `(M, C)` until they are. The following function implements this part of the solution.
@@ -95,7 +114,7 @@ def recover_n(pairs):
 
 # Håstad's broadcast attack
 
-NB: Håstad's broadcast attack is a Coppersmith's attack (based on the Coppersmith method, used to find zeros of polynomials) and its general case uses the LLL algorithm. Lattices are completely out of the scope of this write-up so the "simple version" of the algorithm is preferred.
+NB: Håstad's broadcast attack is a Coppersmith's attack (based on the Coppersmith method, used to find zeros of polynomials) and its general case uses the LLL algorithm. Latices are completely out of the scope of this write-up so the "simple version" of the algorithm is preferred.
 
 The simple version has two key parts: first, using the Chinese Remainder Theorem to recover `flag^e` and second, taking its `e`-th root to recover the flag. The fact that the flag is padded changes nothing as the padding is deterministic.
 
@@ -145,7 +164,7 @@ C, N = [], []
 while True:
 
     r = remote('51.68.95.78', 32773)
-    #r = process(['python3', 'viking.py'])
+    #r = process(['python3', 'scream_like_viking.py'])
 
     # ---------------------- recover N ----------------------
 
