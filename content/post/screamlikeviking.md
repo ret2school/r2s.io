@@ -3,7 +3,6 @@ title: "[pwnme 2023 - crypto] Scream Like Viking"
 date: 2023-05-22
 tags: ["ctf", "Alol", "yarienkiva", "crypto", "", "pwnme"]
 ---
-
 # [pwnme 2023 - crypto] Scream Like Viking
 
 > Our protagonist John is in a room, he hears some kind of noise, like something resonating.
@@ -13,25 +12,6 @@ tags: ["ctf", "Alol", "yarienkiva", "crypto", "", "pwnme"]
 > `nc 51.68.95.78 32773`
 
 ![Shout Like Dovahkiin > Scream Like Viking](https://media.tenor.com/O8zaeaYI8NkAAAAd/fus-roh-dah-skyrim.gif)
-
-This article is a write-up for "Scream Like Viking", a cryptography challenge from PwnMe 2023.
-
-# TL;DR
-
-- Get pairs of `(C, N)` where `N` is recovered by taking GCD of multiple `M^e - C`
-- Håstad's broadcast attack (CRT + `e`-th root) on the pairs of `(C, N)`
-
-# Code review
-
-The following source code is given:# [pwnme 2023 - crypto] Scream Like Viking
-
-> Our protagonist John is in a room, he hears some kind of noise, like something resonating.
-> But he doesn't understand it...
-> Perhaps he could play with his own echoes to guess what the meaning of this famous resonance could be...
-> 
-> `nc 51.68.95.78 32773`
-
-<center><img alt="Shout Like Dovahkiin > Scream Like Viking" src="https://media.tenor.com/O8zaeaYI8NkAAAAd/fus-roh-dah-skyrim.gif"></center>
 
 This article is a write-up for "Scream Like Viking", a cryptography challenge from PwnMe 2023.
 
