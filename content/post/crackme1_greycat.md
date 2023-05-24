@@ -83,7 +83,7 @@ index `i-0x171` in the large array. That\'s how most of the strings of
 the program are retrieved. We can then replace all the calls to this
 function with the corresponding string. I\'ve done it by hand, by
 calling manually the function `_0xb32e` in the JavaScript console. You
-can find the resulting script [there](src/app_deobf1.js).
+can find the resulting script [there](https://github.com/ret2school/ctf/blob/master/2023/greyctf/reverse/crackme1/src/app_deobf1.js).
 
 Then, the following code raises our attention. Is it the key validation
 algorithm?
@@ -252,7 +252,7 @@ A new canvas is created, and its WebGL context is stored in
 displaying the image.
 
 For more details, you can find the final deobfuscated JS script
-[here](src/app_deobf2.js).
+[here](https://github.com/ret2school/ctf/blob/master/2023/greyctf/reverse/crackme1/src/app_deobf2.js).
 
 Data is stored in three large matrices (here `matrix1`, `matrix2`,
 `matrix3`)
@@ -285,7 +285,7 @@ the shader (`f`) is retrieved, the values of `a, b, c, d, e` are updated
 and the previous values of `d` are stored in the uniform vector `s`
 
 The algorithm can be simplified and written in Python as follows (see
-full script [here](src/check_flag.py)):
+full script [here](https://github.com/ret2school/ctf/blob/master/2023/greyctf/reverse/crackme1/src/check_flag.py)):
 
 ``` python
 
@@ -424,7 +424,7 @@ here 0 (at iteration 34), therefore we must have `key[0] = 82 = 'R'`.
 
 During the CTF, I was lazy so I retrieved one by one the characters of
 the key in the same way, but here is a nice script to get the key (full
-script [here](src/solve.py)):
+script [here](https://github.com/ret2school/ctf/blob/master/2023/greyctf/reverse/crackme1/src/solve.py)):
 
 ``` python
 
