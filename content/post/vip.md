@@ -1,5 +1,5 @@
 ---
-title: "[pwnme 2023] vip"
+title: "[pwnme 2023 - pwn] vip"
 date: 2023-05-07
 tags: ["ctf", "nasm", "pwn", "linux", "pwnme"]
 ---

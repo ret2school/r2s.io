@@ -1,5 +1,5 @@
 ---
-title: "[pwnme 2023] Heap-hop"
+title: "[pwnme 2023 - pwn] Heap-hop"
 date: 2023-05-07
 tags: ["ctf", "nasm", "pwn", "linux", "pwnme", "heap", "tcache"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "[pwnme 2023] chip8"
+title: "[pwnme 2023 - pwn] chip8"
 date: 2023-05-08
 tags: ["ctf", "nasm", "pwn", "linux", "pwnme", "chip8", "emulator"]
 ---

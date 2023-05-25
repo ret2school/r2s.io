@@ -1,5 +1,5 @@
 ---
-title: "[SECCON CTF 2022 Quals] babyfile"
+title: "[SECCON CTF 2022 Quals - pwn] babyfile"
 date: 2022-08-19
 tags: ["ctf", "nasm", "pwn", "linux", "file stream", "SECCON"]
 ---
