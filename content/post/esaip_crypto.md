@@ -86,11 +86,11 @@ if __name__ == '__main__':
 ```
 We can control the `SBOX` for the encryption of a single random message and we have to leak the key. I originally thought of doing something like in [this StackOverflow post](https://crypto.stackexchange.com/questions/67612/aes-oracle-with-bad-s-box#67614) where the `SBOX` is set to an identity mapping (`[0x0, 0x1, ..., 0xff] => [0x0, 0x1, ..., 0xff]`) so that no substitution actually takes place but it wouldn't have worked as we need to leak the encryption key, not the plaintext.
 
-What I chose to do instead was to send an empty/null `SBOX` (256 zeros). The commented `encrypt` function below explains this choice.
+What I chose to do instead was to send an empty/null `SBOX` (256 zeros). The commented `encrypt` function below explains why.
 
 ```py
 def encrypt(self, plaintext):
-    # convert plaintext to 4 x 4 matrix
+    # convert plaintext block to 4 x 4 matrix
     self.plain_state = text2matrix(plaintext)
 
     # plaintext ^= round_keys[:4]
@@ -339,7 +339,7 @@ xi / (xi-xj) * yj + xj / (xj-xi) * yi <=> s / (s - u) * f(u) + u / (u - s) * f(s
                                       <=> 1 * f(0) + 0 * f(s)
                                       <=> f(0)
 ```
-To do this, we can simply create a new share with an ID of `1256472` (which will create the share `(0, secret)`).
+To do this, we can simply create a new share with an ID of `1256472` (so that `create_point` will return 0 and the share `(0, secret)` will be created).
 
 ```
 $ nc AAA.BBB.CCC.DDD 55555
