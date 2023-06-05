@@ -8,7 +8,8 @@ tags = ["ctf", "alol", "reverse", "dotnet", "z3", "ESAIP CTF", "2023"]
 
 > Solves : 3
 >
-> They downed the CTF infra as soon as it ended so I didn't have the time to save the challenge prompt :\(
+> It seems that you now need a password to get some stars...
+> But you don't have any. Time for some hacking!
 >
 > Author: Oogle
 
@@ -21,7 +22,7 @@ Dothell Revenge was a hard reverse-engineering challenge from ESAIP CTF 2023. It
 
 ## Unpacking ConfuserEx
 
-Looking at the decompiled code in dnSpy indicates the binary is packed.
+Looking at the decompiled code in dnSpy, it's very likely that the binary is packed.
 
 ![](https://raw.githubusercontent.com/ret2school/ctf/master/2023/esaip_ctf/reverse/dothell_revenge/regretting_my_life_choices_rn.png)
 
@@ -59,7 +60,7 @@ This tells us with high certainty that the PE was packed using [ConfuserEx](http
 
 Now that we've unpacked the PE, let's analyze the source code and write a keygen. The program isn't obfuscated and there's only a single anti-debug function (`nantendoShadowBan`) that makes the program exit if `dnSpy` or `ILSpy` are present in the process list. Other than that, the program isn't very complicated, it creates a form containing an input box and a button (the button runs the `checker_Click` function). The source code of the form is available [here](https://raw.githubusercontent.com/ret2school/ctf/master/2023/esaip_ctf/reverse/dothell_revenge/Form1.cs).
 
-To write the keygen we'll use Z3Py, an API around Z3 a SMT solver/theorem prover by Microsoft. A keygen using Z3 can be written by "translating" the `C#` to `Python` and modifying the syntax a bit. Below is the commented solve script (also available [here](https://raw.githubusercontent.com/ret2school/ctf/master/2023/esaip_ctf/reverse/dothell_revenge/solve.py)).
+To write the keygen we'll use Z3Py, an API around Z3 (a SMT solver/theorem prover by Microsoft). A keygen using Z3 can be written by "translating" the `C#` to `Python` and modifying the syntax a bit. Below is the commented solve script (also available [here](https://raw.githubusercontent.com/ret2school/ctf/master/2023/esaip_ctf/reverse/dothell_revenge/solve.py)).
 
 ```py
 from base64 import b64decode
@@ -72,6 +73,7 @@ import z3
 # This single assumption cost me 3h, most of my sanity and half of my brain cells. Why?
 # Because '/' isn't a true division, it's a *floor division*
 # Meaning that the condition is true for 35 but also 36, 37, 38 and 39
+# The author hadn't originally planned for this and I'm thankful he helped me debug the problem at 2AM
 
 """
 if (length / 5 + 1 != 8)
