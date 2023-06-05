@@ -1,5 +1,5 @@
 +++
-title = "[ESAIP CTF 2023] All crypto challenges"
+title = "[ESAIP CTF 2023 - crypto] All crypto challenges"
 tags = ["ctf", "ret2school", "ESAIP CTF", "2023", "Alol", "crypto"]
 date = "2023-06-02"
 +++
