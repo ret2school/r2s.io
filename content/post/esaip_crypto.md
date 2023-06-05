@@ -1,7 +1,7 @@
 +++
-title= "[ESAIP CTF 2023] All crypto challenges"
-tags = ["ctf", "ret2school", "ESAIP CTF", "2023", "Alol" "crypto"]
-date = "2022-05-27"
+title = "[ESAIP CTF 2023] All crypto challenges"
+tags = ["ctf", "ret2school", "ESAIP CTF", "2023", "Alol", "crypto"]
+date = "2023-06-02"
 +++
 
 This article contains write-ups for all cryptography challenges from ESAIP CTF 2023. All challenge files, prompts and solves are available [here](https://github.com/ESAIP-CTF/public-esaip-ctf-2023/tree/master/challenges/crypto).

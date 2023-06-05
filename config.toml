@@ -1,9 +1,9 @@
+languageCode = 'en-us'
 baseURL = "https://ret2school.github.io"
 title = "ret2school"
 theme = "m10c"
 themesDir = "themes/"
 paginate = 12
-googleAnalytics = "G-8K5XT0SJN8"
 
 [menu]
   [[menu.main]]
@@ -19,24 +19,7 @@ googleAnalytics = "G-8K5XT0SJN8"
   avatar = "pic.jpeg"
   author = "nasm"
   description = "Just a bunch of french ctf players"
-  menu_item_separator = " / "
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/ret2school"
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/ret2school_fr"
-
 [markup]
   [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineAnchors = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
     style = "dracula"
     tabWidth = 4
