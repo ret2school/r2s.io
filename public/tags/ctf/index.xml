@@ -5,7 +5,32 @@
     <link>https://ret2school.github.io/tags/ctf/</link>
     <description>Recent content in ctf on ret2school</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[ESAIP CTF 2023] All crypto challenges</title>
+      <link>https://ret2school.github.io/post/esaip_crypto/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/esaip_crypto/</guid>
+      <description>This article contains write-ups for all cryptography challenges from ESAIP CTF 2023. All challenge files, prompts and solves are available here.
+The event was nice and I had a great time competing with my friends. However, I&amp;rsquo;d like to quickly rant before diving into the write-ups.
+&amp;lt;rant&amp;gt;
+ I can&amp;rsquo;t believe this has to be said but before giving source code, please make sure that it works. Added bonus: publish the Dockerfiles you use so players don&amp;rsquo;t have to waste time debugging.</description>
+    </item>
+    
+    <item>
+      <title>[ESAIP CTF 2023] Dothell Revenge</title>
+      <link>https://ret2school.github.io/post/dothell_revenge/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/dothell_revenge/</guid>
+      <description>Dothell Revenge  Solves : 3
+They downed the CTF infra as soon as it ended so I didn&amp;rsquo;t have the time to save the challenge prompt :(
+Author: Oogle
+ Dothell Revenge was a hard reverse-engineering challenge from ESAIP CTF 2023. It was a modified version of Dothell, a challenge from the 2022 edition that had 0 solves. I didn&amp;rsquo;t participate IRL last year, but I did this year, and even beat two of the best reversers I know to the first blood.</description>
+    </item>
+    
     <item>
       <title>[Grey Cat CTF Quals 2023 - reverse] crackme1</title>
       <link>https://ret2school.github.io/post/crackme1_greycat/</link>
@@ -58,7 +83,7 @@ user@PwnMeIfYouKern:~$ cat /proc/cpuinfo | grep sm.p user@PwnMeIfYouKern:~$ cat 
     </item>
     
     <item>
-      <title>[pwnme 2023] chip8</title>
+      <title>[pwnme 2023 - pwn] chip8</title>
       <link>https://ret2school.github.io/post/chip8/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
       
@@ -71,7 +96,7 @@ Remote service at : nc 51.254.39.184 1337
     </item>
     
     <item>
-      <title>[pwnme 2023] Heap-hop</title>
+      <title>[pwnme 2023 - pwn] Heap-hop</title>
       <link>https://ret2school.github.io/post/heaphop/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       
@@ -85,7 +110,7 @@ Remote service at : nc 51.254.39.184 1336
     </item>
     
     <item>
-      <title>[pwnme 2023] vip</title>
+      <title>[pwnme 2023 - pwn] vip</title>
       <link>https://ret2school.github.io/post/vip/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       
@@ -98,7 +123,7 @@ Remote service at : nc 51.254.39.184 1335
     </item>
     
     <item>
-      <title>[UTCTF 2023] Welcome</title>
+      <title>[UTCTF 2023 - reverse] Welcome</title>
       <link>https://ret2school.github.io/post/welcome/</link>
       <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
       
@@ -110,7 +135,7 @@ Welcome to UTCTF! I made a special last minute program just for you to display a
     </item>
     
     <item>
-      <title>[SECCON CTF 2022 Quals] babyfile</title>
+      <title>[SECCON CTF 2022 Quals - pwn] babyfile</title>
       <link>https://ret2school.github.io/post/babyfile/</link>
       <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
       

@@ -5,6 +5,7 @@
     <link>https://ret2school.github.io/tags/nasm/</link>
     <description>Recent content in nasm on ret2school</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Sun, 21 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/nasm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Grey Cat CTF Quals 2023 - pwn] Write me a Book</title>
@@ -23,7 +24,7 @@ TL;DR To manage to read the flag we have to:
     </item>
     
     <item>
-      <title>[pwnme 2023] chip8</title>
+      <title>[pwnme 2023 - pwn] chip8</title>
       <link>https://ret2school.github.io/post/chip8/</link>
       <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
       
@@ -36,7 +37,7 @@ Remote service at : nc 51.254.39.184 1337
     </item>
     
     <item>
-      <title>[pwnme 2023] Heap-hop</title>
+      <title>[pwnme 2023 - pwn] Heap-hop</title>
       <link>https://ret2school.github.io/post/heaphop/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       
@@ -50,7 +51,7 @@ Remote service at : nc 51.254.39.184 1336
     </item>
     
     <item>
-      <title>[pwnme 2023] vip</title>
+      <title>[pwnme 2023 - pwn] vip</title>
       <link>https://ret2school.github.io/post/vip/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       
@@ -63,7 +64,7 @@ Remote service at : nc 51.254.39.184 1335
     </item>
     
     <item>
-      <title>[SECCON CTF 2022 Quals] babyfile</title>
+      <title>[SECCON CTF 2022 Quals - pwn] babyfile</title>
       <link>https://ret2school.github.io/post/babyfile/</link>
       <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
       
