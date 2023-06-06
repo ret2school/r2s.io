@@ -1,5 +1,5 @@
 +++
-title: "[JustCTF - Crypto] Vaulted"
+title = "[JustCTF - crypto] Vaulted"
 tags = ["ctf", "ret2school", "JustCTF", "2023", "alol", "crypto", "ecc"]
 date = "2023-06-02"
 +++

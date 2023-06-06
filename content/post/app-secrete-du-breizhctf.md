@@ -1,6 +1,6 @@
 +++                                                                           
-title = "[Breizh CTF 2022- reverse] L'appli secrète du breizhCTF"                  
-tags = ["ctf", "ret2school", "z3, "Breizh CTF", "MorpheusH3x", "forensics", "2022"]
+title = "[Breizh CTF 2022 - reverse] L'appli secrète du breizhCTF"                  
+tags = ["ctf", "ret2school", "z3", "BreizhCTF", "MorpheusH3x", "forensics", "2022"]
 date = "2022-03-04"    
 +++
 

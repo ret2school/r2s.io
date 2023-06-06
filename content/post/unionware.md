@@ -1,6 +1,6 @@
 +++
 title = "[UnionCTF 2021 - RE] Unionware"
-tags = ["ctf", "unionCTF", RE", "RC4", "supersnail", "powershell", "anti debug", "aaSSfxxx", "RSA", "2021"]
+tags = ["ctf", "unionCTF", "RE", "RC4", "supersnail", "powershell", "anti debug", "aaSSfxxx", "RSA", "2021"]
 date = "2021-02-22"
 +++
 
