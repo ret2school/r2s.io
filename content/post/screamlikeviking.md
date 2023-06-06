@@ -1,9 +1,10 @@
 ---
 title: "[pwnme 2023 - crypto] Scream Like Viking"
 date: 2023-05-22
-tags: ["ctf", "Alol", "yarienkiva", "crypto", "", "pwnme"]
+tags: ["ctf", "Alol", "crypto", "pwnme"]
 ---
-# [pwnme 2023 - crypto] Scream Like Viking
+
+# Scream Like Viking
 
 > Our protagonist John is in a room, he hears some kind of noise, like something resonating.
 > But he doesn't understand it...

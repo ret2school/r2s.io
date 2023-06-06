@@ -4,8 +4,7 @@ tags = ["ctf", "AeroCTF 2021", "web", "java", "ssti", "Thymeleaf", "2021", "x."]
 date = "2021-03-02"
 +++
 
-# [Localization is hard - web] AeroCTF
-
+# Localization is hard
 
 ## 0x00
 

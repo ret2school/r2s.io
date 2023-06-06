@@ -1,6 +1,6 @@
 +++
 title = "[CyberSecurityRumble 2021 - RE / Forensics] The Compromise"
-tags = ["ctf", "ret2school", "CyberSecurityRumble", "supersnail", "aaSSfxxx", "reverse", "RE", "fofo", "forensic", "forensics", "2021"]
+tags = ["ctf", "ret2school", "CyberSecurityRumble", "supersnail", "aaSSfxxx", "reverse engineering", "RE", "forensics", "2021"]
 date = "2021-11-29"
 +++
 

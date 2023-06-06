@@ -1,6 +1,6 @@
 +++
 title = "[AeroCTF 2021 - RE] dummyper"
-tags = ["ctf", "ret2school", "Aero CTF 2021", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2021", "AES", "unpacking"]
+tags = ["ctf", "ret2school", "Aero CTF", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2021", "AES", "unpacking"]
 date = "2021-02-28"
 +++
 

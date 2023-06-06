@@ -1,6 +1,6 @@
 +++
 title = "[CyberSecurityRumble 2021 - RE / Game Hacking] CSRunner"
-tags = ["ctf", "ret2school", "CyberSecurityRumble", "supersnail", "aaSSfxxx", "reverse", "GameHacking", "RE", "2021"]
+tags = ["ctf", "ret2school", "CyberSecurityRumble", "supersnail", "aaSSfxxx", "reverse engineering", "game hacking", "RE", "2021"]
 date = "2021-11-29"
 +++                                                                             
 

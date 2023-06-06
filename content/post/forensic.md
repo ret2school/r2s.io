@@ -1,6 +1,6 @@
 +++
 title = "[Hitcon CTF 2020 - forensic] AC1750"
-tags = ["ctf", "hitcon", "HitconCTF", "HitconCTF 2020", "forensic", "fofo", "supersnail", "Zeynn", "aaSSfxxx", "2020"]
+tags = ["ctf", "HitconCTF", "forensics", "supersnail", "Zeynn", "aaSSfxxx", "2020"]
 date = "2020-12-01"
 +++
 

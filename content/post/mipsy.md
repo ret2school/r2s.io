@@ -1,6 +1,6 @@
 +++
 title = "[FCSC 2021 - pwn] Itsy Mipsy router"
-tags = ["ctf", "ret2school", "FCSC", "mipsy", "n4sm", "nasm", "2021", "mips", "pwn"]
+tags = ["ctf", "ret2school", "FCSC", "nasm", "2021", "mips", "pwn"]
 date = "2021-05-03"
 +++
 

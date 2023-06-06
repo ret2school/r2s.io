@@ -1,6 +1,6 @@
 +++
 title = "[AeroCTF 2021 - RE] BashD00r"
-tags = ["ctf", "ret2school", "Aero CTF 2021", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2021", "unpacking"]
+tags = ["ctf", "ret2school", "Aero CTF", "reverse engineering", "RE", "supersnail", "aaSSfxxx", "2021", "unpacking"]
 date = "2021-02-28"
 +++
 

@@ -1,6 +1,6 @@
 +++                                                                           
 title = "[Breizh CTF 2022- Forensic] La livraison de pizza"         
-tags = ["ctf", "ret2school", "Breizh CTF", "MorpheusH3x", "forensic", "2022"]
+tags = ["ctf", "ret2school", "Breizh CTF", "MorpheusH3x", "forensics", "2022"]
 date = "2022-03-04"
 +++
 

@@ -1,12 +1,12 @@
 +++
 title = "[ESAIP CTF 2023 - reverse] Dothell Revenge"
 date = "2023-05-27"
-tags = ["ctf", "alol", "reverse", "dotnet", "z3", "ESAIP CTF", "2023"]
+tags = ["ctf", "alol", "reverse engineering", "dotnet", "z3", "ESAIP CTF", "2023"]
 +++
 
 # Dothell Revenge
 
-> Solves : 3
+> Solves: 3
 >
 > It seems that you now need a password to get some stars...
 > But you don't have any. Time for some hacking!

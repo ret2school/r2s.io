@@ -1,6 +1,6 @@
 +++
 title = "[TRACS 2021 - RE] Coffre"
-tags = ["ctf", "ret2school", "TRACS 2021", "TRACS", "nasm", "Alol", "reverse", "RE", "IRL", "rand", "2021"]
+tags = ["ctf", "ret2school", "TRACS", "nasm", "Alol", "reverse engineering", "RE", "IRL", "rand", "2021"]
 date = "2021-12-05"
 +++
 

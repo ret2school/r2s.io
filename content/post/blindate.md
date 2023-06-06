@@ -1,6 +1,6 @@
 +++
 title = "[FCSC 2021 - pwn] Blind Date"
-tags = ["ctf", "ret2school", "FCSC", "Blind Date", "n4sm", "nasm", "2021", "pwn"]
+tags = ["ctf", "ret2school", "FCSC", "Blind Date", "nasm", "2021", "pwn"]
 date = "2021-05-03"
 +++
 

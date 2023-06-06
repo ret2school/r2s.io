@@ -1,7 +1,7 @@
 ---
 title: "[Grey Cat CTF Quals 2023 - reverse] crackme1"
 date: 2023-05-24
-tags: ["ctf", "spiker00t", "reverse", "js"]
+tags: ["ctf", "spiker00t", "reverse engineering", "js"]
 ---
 
 ![](/images/greycat/chall.png)

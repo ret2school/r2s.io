@@ -1,6 +1,6 @@
 +++                        
 title = "[Hitcon 2021 - web] Vulpixelize"                                  
-tags = ["ctf", "ret2school", "HITCON", "tek", "web", "2021"]
+tags = ["ctf", "ret2school", "HitconCTF", "tek", "web", "2021"]
 date = "2022-01-02"
 +++
 

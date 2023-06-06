@@ -1,6 +1,6 @@
 +++                                                                           
 title = "[Breizh CTF 2022- reverse] Baby"                  
-tags = ["ctf", "ret2school", "Breizh CTF", "MorpheusH3x", "reverse", "2022"]      
+tags = ["ctf", "ret2school", "Breizh CTF", "MorpheusH3x", "reverse engineering", "2022"]      
 date = "2022-03-04"    
 +++
 

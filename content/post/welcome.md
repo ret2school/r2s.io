@@ -1,7 +1,7 @@
 ---
 title: "[UTCTF 2023 - reverse] Welcome"
 date: 2023-01-10
-tags: ["ctf", "supersnail", "reverse", "avr"]
+tags: ["ctf", "supersnail", "reverse engineering", "avr"]
 ---
 
 

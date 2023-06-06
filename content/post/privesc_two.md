@@ -1,6 +1,6 @@
 +++
 title = "[FCSC 2021 - misc] Privesc Me (2) - \"ALED\" - Your randomness checker"
-tags = ["ctf", "ret2school", "FCSC", "Privesc Me", "0p", "0poss", "2021", "misc", "privesc"]
+tags = ["ctf", "ret2school", "FCSC", "0p", "0poss", "2021", "misc", "privesc"]
 date = "2021-05-03"
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "[BTSCTF 2021 - RE] BtS emulator"
-tags = ["ctf", "BTSCTF", "RE", "r0da", "2021", "revers engineering"]
+tags = ["ctf", "BTSCTF", "RE", "r0da", "2021"]
 date = "2021-03-12"
 +++
 

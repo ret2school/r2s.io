@@ -1,6 +1,6 @@
 +++
 title = "[DaVinciCTF 2021 - pwn] Quotebook"
-tags = ["ctf", "DaVinciCTF 2021", "pwn", "heap", "2021", "supersnail", "aaSSfxxx"]
+tags = ["ctf", "DaVinciCTF", "pwn", "heap", "2021", "supersnail", "aaSSfxxx"]
 date = "2021-03-15"
 +++
 
