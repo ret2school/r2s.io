@@ -9,7 +9,7 @@ authors:
 
 # ImaginaryCTF 2023 - Write-Up for the challenge Sheepish (Reverse)
 
-![challenge](../images/chall.png)
+![challenge](../../images/chall.png)
 
 **TL;DR:** Obfuscated Python code using lambda-calculus.
 
