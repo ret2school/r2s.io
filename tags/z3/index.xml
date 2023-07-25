@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>z3 on ret2school</title>
+    <link>https://ret2school.github.io/tags/z3/</link>
+    <description>Recent content in z3 on ret2school</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/z3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[ImaginaryCTF 2023 - reverse] Sheepish</title>
+      <link>https://ret2school.github.io/post/sheepish/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/sheepish/</guid>
+      <description>ImaginaryCTF 2023 - Write-Up for the challenge Sheepish (Reverse) TL;DR: Obfuscated Python code using lambda-calculus.
+Description: Mary had a flagchecker, its fleece was white as snow.
+Introduction We are given a Python script, consisting in a single line of ~26k characters, with lots of lambda-functions. The full script is available here , see the beginning and the end of the file below.
+print((((lambda _____________:((lambda ___:_____________(lambda _______:___(___)(_______)))(lambda ___:_____________(lambda _______:___(___)(_______)))))(lambda _____________:lambda ___________:lambda ______:(lambda ____:(lambda _:_(lambda __________:lambda _____:__________))(____))(___________)(lambda _:(lambda __________:lambda _____:__________))(lambda _:(lambda __________:lambda _____:__________(_____)(lambda __________:lambda _____:_____))((lambda __________:lambda _____:(lambda __________:lambda _____:__________(_____)(lambda __________:lambda _____:_____))((lambda __________:lambda _____:(lambda __________:__________(lambda _:(lambda __________:lambda _____:_____))(lambda __________:lambda _____:__________)) [.</description>
+    </item>
+    
+    <item>
+      <title>[ESAIP CTF 2023 - reverse] Dothell Revenge</title>
+      <link>https://ret2school.github.io/post/dothell_revenge/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/dothell_revenge/</guid>
+      <description>Dothell Revenge  Solves: 3
+It seems that you now need a password to get some stars&amp;hellip; But you don&amp;rsquo;t have any. Time for some hacking!
+Author: Oogle
+ Dothell Revenge was a hard reverse-engineering challenge from ESAIP CTF 2023. It was a modified version of Dothell, a challenge from the 2022 edition that had 0 solves. I didn&amp;rsquo;t participate IRL last year, but I did this year, and even beat two of the best reversers I know to the first blood.</description>
+    </item>
+    
+    <item>
+      <title>[Breizh CTF 2022 - reverse] L&#39;appli secrète du breizhCTF</title>
+      <link>https://ret2school.github.io/post/app-secrete-du-breizhctf/</link>
+      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/app-secrete-du-breizhctf/</guid>
+      <description>Value: 131 Description: En arrivant à Rennes au BreizhCTF, vous avez trouvé un téléphone par terre et avez décidé de le garder avec vous. Vous vous rendez compte que sur ce téléphone, il y a une appli &#39;SuperSecretApp&#39;. Malheureusement, pour accéder à son contenu, vous devez avoir la bonne combinaison du username et du password. Vous avez donc décidé de reverse l&#39;application pour trouvez cela! Auteur: Worty Format : BZHCTF{username-password}  The file provided is an .</description>
+    </item>
+    
+  </channel>
+</rss>

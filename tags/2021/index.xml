@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021 on ret2school</title>
+    <link>https://ret2school.github.io/tags/2021/</link>
+    <description>Recent content in 2021 on ret2school</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/2021/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Hitcon 2021 - web] Vulpixelize</title>
+      <link>https://ret2school.github.io/post/vulpixelize/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/vulpixelize/</guid>
+      <description>HITCON 2021 - Vulpixelize (232 points) My solution for this challenge is maybe unintended and not very technical, but it works :)
+ We can send a URL that the bot will visit.
+It then takes a screenshot of the page, blurs it and returns us the result :
+@app.route(&amp;#39;/submit&amp;#39;, methods=[&amp;#39;GET&amp;#39;]) def submit(): path = &amp;#39;static/images/%s.png&amp;#39; % uuid.uuid4().hex url = request.args.get(&amp;#39;url&amp;#39;) if url: # secrity check if not url.startswith(&amp;#39;http://&amp;#39;) and not url.</description>
+    </item>
+    
+    <item>
+      <title>[TRACS 2021 - RE] Coffre</title>
+      <link>https://ret2school.github.io/post/safe/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/safe/</guid>
+      <description>Intro  Epreuve 12-3 – Coffre En tant que stagiaire vous avez accès aux locaux de la NSB. Vous allez collecter des informations dans les locaux. Un coffre est présent dans les locaux en salle rideau. Il appartient à Richard Cresus de la Tune. Essayez d’ouvrir ce coffre. Quel est l’IBAN contenu dans le coffre ? Format de la réponse : IBAN sans séparateur.
+ Basically, we have to crack open an electronic safe.</description>
+    </item>
+    
+    <item>
+      <title>[CyberSecurityRumble 2021 - RE / Forensics] The Compromise</title>
+      <link>https://ret2school.github.io/post/compromise/</link>
+      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/compromise/</guid>
+      <description>The Compromise (300 pts)  The SOC team of the BrighSoul QPL (Quantum Physic Labs) is continuously monitoring HTTP proxy and DNS outbound traffic and has identified suspicious DNS traffic to the server authoritative (NS) for the domain thedarkestside.org.
+Upon investigation, they presume that an internal windows workstation with has been compromised with a Colbalt Strike beacon running as the executable named ntupdate.exe. The workstation belongs to the R&amp;amp;D team and they are suspicions that files containing critical Intellectual Property information have been exfiltrated.</description>
+    </item>
+    
+    <item>
+      <title>[CyberSecurityRumble 2021 - RE / Game Hacking] CSRunner</title>
+      <link>https://ret2school.github.io/post/csrunner/</link>
+      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/csrunner/</guid>
+      <description>Collect green stuff, avoid red guys. Easy as pie, right? Not even your speedhacks will help you here! You might have to take a closer look and inspect it carefully. Have fun &amp;amp; good luck!
+ This challenge is a game, according to its description. Since I gave up on the challenge I was trying to do (NOdeBANKing), I went to help other teammates blocked on this challenge.
+This game was using Unity3D as engine, where game logic is usually written in C# or other language that compiles to MSIL.</description>
+    </item>
+    
+    <item>
+      <title>[Hack.lu 2021 - pwn] Cloudinspect</title>
+      <link>https://ret2school.github.io/post/cloudinspect/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cloudinspect/</guid>
+      <description>CloudInspect CloundInpect was a hypervisor exploitation challenge I did for the Hack.lu event. I didn&amp;rsquo;t succeed to flag it within the 48 hours :(. But anyway I hope this write up will be interesting to read! The related files can be found right here
+ After Whiterock released it&amp;rsquo;s trading bot cloud with special Stonks Sockets another hedge fund, Castel, comes with some competition. The special feature here is called &amp;ldquo;cloudinspect&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>[ASIS CTF QUALS 2021 - pwn] abbr &amp; justpwnit</title>
+      <link>https://ret2school.github.io/post/pwnasis/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/pwnasis/</guid>
+      <description>Hello folks ! Here is a write up for the two first pwn challenges of the ASIS CTF. You can find the related files here.
+justpwnit justpwnit was a warmup pwn challenge. That&amp;rsquo;s only a basic stack overflow. The binary is statically linked and here is the checksec&amp;rsquo;s output:
+[*] &#39;/home/nasm/justpwnit&#39; Arch: amd64-64-little RELRO: Partial RELRO Stack: No canary found NX: NX enabled PIE: No PIE (0x400000) Morever the source code is provided as it is the case for all the pwn tasks !</description>
+    </item>
+    
+    <item>
+      <title>[DownUnderCTF 2021 - pwn] DUCTFnote</title>
+      <link>https://ret2school.github.io/post/ductf_note/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/ductf_note/</guid>
+      <description>DownUnderCTF - DUCTFnote (471 points) DUCTFnote was a heap exploitation challenge.
+The main difficulty was that we could only have one active note at a time, so if we create a new note, the old one is no longer accessible.
+Source code analysis I spotted one bug in the source code which leads to another bug :
+135 void edit_note(datanote_t * note) { 136 if(!note) { 137 printf(&amp;#34;No Note.\n&amp;#34;); 138 return; 139 } 140 141 signed char idx = 0; 142 while(idx &amp;lt;= note-&amp;gt;size) { // note-&amp;gt;size can takes values from 0 to 127 (0x7f) 143 *(&amp;amp;(note-&amp;gt;data)+idx) = fgetc(stdin); 144 if (*(&amp;amp;(note-&amp;gt;data)+idx) == &amp;#39;\n&amp;#39;) {*(&amp;amp;(note-&amp;gt;data)+idx) = &amp;#39;\0&amp;#39;; break;} 145 idx++; 146 } 147 } In the function edit_note the condition of the while is incorrect and the loop is executed once too often : while(idx &amp;lt;= note-&amp;gt;size) should have been while(idx &amp;lt; note-&amp;gt;size).</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - misc] Privesc Me (2) - &#34;ALED&#34; - Your randomness checker</title>
+      <link>https://ret2school.github.io/post/privesc_two/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/privesc_two/</guid>
+      <description>Privesc Me (2) - &amp;ldquo;ALED&amp;rdquo; - Your randomness checker (misc - 194 pts)  Le dernier stagiaire de l&amp;rsquo;équipe nous a pondu un nouveau programme pour tester la robustesse des clés d&amp;rsquo;authentification que notre administrateur système utilise. Son outil est disponible dans le dossier stage1. Le chef a poussé un soupir d&amp;rsquo;agacement en voyant le code.
+ I found this one pretty fun and I think it was my favorite along with &amp;ldquo;It&amp;rsquo;s mipsy router&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Blind Date</title>
+      <link>https://ret2school.github.io/post/blindate/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/blindate/</guid>
+      <description>Blind Date (489 pts)  Une société souhaite créer un service en ligne protégeant les informations de ses clients. Pouvez-vous leur montrer qu&amp;rsquo;elle n&amp;rsquo;est pas sûre en lisant le fichier flag.txt sur leur serveur ? Les gérants de cette société n&amp;rsquo;ont pas souhaité vous donner ni le code source de leur solution, ni le binaire compilé, mais ils vous proposent uniquement un accès distant à leur service.
+  nc challenges2.</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] cheapie</title>
+      <link>https://ret2school.github.io/post/cheapie/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cheapie/</guid>
+      <description>Cheapie (pwn - 198 pts)  Êtes-vous familier avec le tas ?
+ Yay a heap challenge !
+Setup The given libc didn&amp;rsquo;t have any symbols and no loader was provided, so I ran pwninit to retrieve a libc with symbols and a loader. Which I didn&amp;rsquo;t realise until me writing this, is that pwninit gave me a different libc, that changed the final part of the exploit : getting a shell !</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Itsy Mipsy router</title>
+      <link>https://ret2school.github.io/post/mipsy/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/mipsy/</guid>
+      <description>Itsy Mipsy Router (200 pts) Itsy Mipsy Router is a pwn challenge I did during the FCSC event. It&amp;rsquo;s not a very hard challenge but I found it very interesting because it was my first mips pwn challenge !
+Setup So basically we got this:
+ On vous demander d&amp;rsquo;auditer un routeur à l&amp;rsquo;interface entre Internet et un réseau interne d&amp;rsquo;une entreprise. Le client vous demande si il est possible de lire les fichiers stockés sur la machine filer qui sert de serveur de fichiers HTTP.</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] reporter</title>
+      <link>https://ret2school.github.io/post/reporter/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/reporter/</guid>
+      <description>Reporter (pwn - 499 pts)  Vous arrivez dans une nouvelle entreprise qui utilise un navigateur conçu en interne. Pouvez-vous obtenir un shell sur la machine de la personne qui vérifie les liens qu&amp;rsquo;on lui envoie ? http://challenges2.france-cybersecurity-challenge.fr:4009/
+ Testing the water As soon as I saw this description, I got hyped, &amp;ldquo;Cool a browser exploit !&amp;rdquo; I thought. &amp;ldquo;It&amp;rsquo;s the perfect occasion to learn more about WebKit and JavaScriptCore&amp;rdquo;&amp;hellip; What a fool.</description>
+    </item>
+    
+    <item>
+      <title>[HeroCTF v3 - RE] ARMada, JNI, Password Keeper, RustInPeace, WTF, fatBoy</title>
+      <link>https://ret2school.github.io/post/heroctfv3/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/heroctfv3/</guid>
+      <description>HeroCTF v3  The files can be found here
+ Here is a Write-Up of some RE tasks solved by supersnail.
+sELF control (75 pts)  I found a program to read the flag but it seems to be broken&amp;hellip; Could you help me patching patching two bytes to make it functional ?
+Challenge : nc chall0.heroctf.fr 2048
+Format : Hero{}
+Author : SoEasY
+ The binary given is an ELF File, but IDA detects it as &amp;ldquo;IA64&amp;rdquo; ELF.</description>
+    </item>
+    
+    <item>
+      <title>[Midnight Sun CTF 2021 - Crypto] frank</title>
+      <link>https://ret2school.github.io/post/writeuprsa/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/writeuprsa/</guid>
+      <description>Welcome folks,
+This writeup is about the Midnight Sun CTF frank challenge on how to recover a full RSA private key, when half of it is erased. Thanks to this recent cryptohack write-up from which this challenge is (for me) inspired. Challenge therefore requires recovering the entire RSA key from this image:
+Get the part of the private key visible: The first step of the challenge is to recover the visible part, to do this I quickly created a small OCR script with the pytesseract module in Python, to facilitate the recovery task.</description>
+    </item>
+    
+    <item>
+      <title>[Midnight Sun CTF 2021 - RE] Labyrevnt</title>
+      <link>https://ret2school.github.io/post/wu_labyrevnt/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/wu_labyrevnt/</guid>
+      <description>You can find the files here.
+We used the proximity browser in IDA with the &amp;ldquo;Add node -&amp;gt; Find path&amp;rdquo; mini-trick to get the path between the main and walk_end function. Once all the function names in the path where dumped, in the same order as in IDA, inside functions.txt, we just have to tell angr to discard, avoid, every state wherein the callstack is different from the path linking main and walk_end.</description>
+    </item>
+    
+    <item>
+      <title>[Securinets CTF 2021 - RE] RUN! &amp; YAY!</title>
+      <link>https://ret2school.github.io/post/rev_securinets/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/rev_securinets/</guid>
+      <description>RUN! (930 pts) This challenge was a keygenme for Windows (64-bit PE), and like all keygenmes you had to understand the algorithm and write a keygen for it.
+The algorithm was &amp;ldquo;simple&amp;rdquo;, you just had to deal with C++ overhead for std::string, and was basically:
+ The programs take the username and computes the sum of each char of the username (with some SSE2 wizardry) This sum is then given as seed to srand() The user serial is split into 2-char blocks, and each block is decoded as hex string and the integer is added to an array The program then searches the highest value in the decoded serial array and allocated a int array with this size The array is filled with rand() values mod 13371337 A valid serial is a sequences of indexes into the random array whose sum is equals to 0xbcdb6 mod 1337  So, the tricky part was to generate this sequence of indexes.</description>
+    </item>
+    
+    <item>
+      <title>[DaVinciCTF 2021 - pwn] Quotebook</title>
+      <link>https://ret2school.github.io/post/dvctf_quotebook/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/dvctf_quotebook/</guid>
+      <description>Da Vinci CTF 2021 - Quotebook (499 pts) The subject of this task was:
+ I created this amazing service to store all my famous quotes. Can you get the flag?
+nc challs.dvc.tf 2222
+ We are given the binary, the source code for it and the libc used on the server. We&amp;rsquo;ll need to find a vuln into the binary to get a shell and grab a flag from the server (typical pwn task).</description>
+    </item>
+    
+    <item>
+      <title>[BTSCTF 2021 - RE] BtS emulator</title>
+      <link>https://ret2school.github.io/post/wu_emulator/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/wu_emulator/</guid>
+      <description>The files can be found here.
+ Hi, I&amp;rsquo;m r0da.
+Last day I did a CTF called BTSCTF, and a challenge called BtS emulator. As I&amp;rsquo;m still working on VMP virtualization currently, I&amp;rsquo;m kind good with VM stuff.
+First I noticed that the binary has all its symbols in it, so easier to reverse. Then I saw that the dispatcher routine seems pretty clean.
+We found the opcode related to it :</description>
+    </item>
+    
+    <item>
+      <title>[AeroCTF 2021 - web] Localization is hard</title>
+      <link>https://ret2school.github.io/post/localization_is_hard_wu/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/localization_is_hard_wu/</guid>
+      <description>Localization is hard 0x00 To solve this challenge we had to exploit a SSTI on Thymeleaf and lead that into a Remote Code Execution
+0x01 Discovering the vulnerability The challenge description talk about a Coffee who made for CTFers and in English and in Russian.
+Btw , the challenge description tell us that the flag should be located at / on the file system, this maybe mean that we have to get an access to the machine to read the flag.</description>
+    </item>
+    
+    <item>
+      <title>[AeroCTF 2021 - RE] BashD00r</title>
+      <link>https://ret2school.github.io/post/bashd00r/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/bashd00r/</guid>
+      <description>Aero CTF 2021 - BashD00r (500 pts) This is the second challenge I was able to solve, and the hardest one. The task is below:
+ There seems to be something wrong with our bash.
+Can you see if anyone has entered the backdoor?
+bash.7z
+ So we are given a archive, which contains a &amp;ldquo;bash&amp;rdquo; binary. This binary was backdoored, so we need to find it to get the flag.</description>
+    </item>
+    
+    <item>
+      <title>[AeroCTF 2021 - RE] dummyper</title>
+      <link>https://ret2school.github.io/post/dummyper/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/dummyper/</guid>
+      <description>Aero CTF 2021 - Dummyper (454 pts) This the first challenge I did. The challenge&amp;rsquo;s task was:
+ This stupid program has encrypted our flag.
+We only have a dump left.
+ With a mysterious &amp;ldquo;dump.7z&amp;rdquo; that contains a &amp;ldquo;dump&amp;rdquo; file. This file is an ELF binary, so we load it in IDA.
+Overview IDA complains about broken section table, but still succeeds to load the bin. We get classical glibc&amp;rsquo;s __libc_start_main, and the &amp;ldquo;main&amp;rdquo; function which looks like this:</description>
+    </item>
+    
+    <item>
+      <title>[UnionCTF 2021 - RE] Unionware</title>
+      <link>https://ret2school.github.io/post/unionware/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/unionware/</guid>
+      <description>UnionCTF - Unionware This challenge gives us two files: an &amp;ldquo;unionware.ps1&amp;rdquo; and a &amp;ldquo;important_homework.txt.unionware&amp;rdquo; containing seemingly random bytes. The challenge tells us that a ransomware encrypted the important homework and asks us to decrypt it.
+Analyzing the Powershell While looking at the powershell, we can see an obfuscated Powershell command, which seems to split some random string and then evaluating it. So, we&amp;rsquo;ll just run the part of the script which deobfuscates the payload without executing it, which give us:</description>
+    </item>
+    
+    <item>
+      <title>[UnionCTF 2021 - pwn] babyrarf</title>
+      <link>https://ret2school.github.io/post/babyrarf/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/babyrarf/</guid>
+      <description>The binary can be found right here.
+[UnionCTF] Babyrarf Welcome guys,
+This Write-Up is about de first pwn challenge of unionctf: babyrarf. It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).
+Let&amp;rsquo;s take a look at the src!
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;#include &amp;lt;stdint.h&amp;gt;#include &amp;lt;unistd.h&amp;gt; typedef struct attack { uint64_t id; uint64_t dmg; } attack; typedef struct character { char name[10]; int health; } character; uint8_t score; int read_int(){ char buf[10]; fgets(buf, 10, stdin); return atoi(buf); } void get_shell(){ execve(&amp;#34;/bin/sh&amp;#34;, NULL, NULL); } attack choose_attack(){ attack a; int id; puts(&amp;#34;Choose an attack:\n&amp;#34;); puts(&amp;#34;1.</description>
+    </item>
+    
+    <item>
+      <title>[CSAW CTF 2020 - RE] Cuba</title>
+      <link>https://ret2school.github.io/post/cuba/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cuba/</guid>
+      <description>Hi
+This is my write up for the challange Cuba of CSAW CTF 2020 :
+So this challenge is a CUBA program wrapped in a Windows Executable. CUBA is a GPU langage created by NVIDIA to work around GPU with high performance langage.
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+Luckily there is a public SDK for it, with a disassembler :
+https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html
+Using a tool called cuobjdump, we can extract the assembly code :
+To extract ptx text from a host binary, use the following command: cuobjdump -ptx &amp;lt;host binary&amp;gt;  And after reversing the output, we can see that it&amp;rsquo;s a simple xor looping through a ciphered flag</description>
+    </item>
+    
+  </channel>
+</rss>
