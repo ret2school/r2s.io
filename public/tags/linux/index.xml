@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on ret2school</title>
+    <link>https://ret2school.github.io/tags/linux/</link>
+    <description>Recent content in linux on ret2school</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[pwnme 2023 - pwn] PwnMeIfYouKern</title>
+      <link>https://ret2school.github.io/post/pwn_me_if_you_kern/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/pwn_me_if_you_kern/</guid>
+      <description>PwnMeIfYouKern was a linux kernel exploitation challenge from pwnme 2023.
+There were no SMAP or SMEP, but KASLR was activated.
+user@PwnMeIfYouKern:~$ cat /proc/cpuinfo | grep sm.p user@PwnMeIfYouKern:~$ cat /proc/cmdline console=ttyS0 loglevel=3 oops=panic panic=1 kaslr user@PwnMeIfYouKern:~$ cat /proc/sys/vm/mmap_min_addr 4096 TL;DR  we manipulate elements from a linked list each element contains a buffer, his size, and a pointer to the next element of the list there is a buffer overflow, we can change the size of the buffer to leak data, and overwrite the pointer to the next element to get an arbitrary read/write break kaslr by leaking a pipe_buffer structure overwrite modprobe_path enjoy  Reverse engineering Here is the write function :</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] chip8</title>
+      <link>https://ret2school.github.io/post/chip8/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/chip8/</guid>
+      <description>chip8  Solves: 24 Easy
+I just found a repo of a chip-8 emulator, it may be vulnerable but I didn&amp;rsquo;t had enough time to report the vulnerability with a working PoC. You must find a way to get the flag in memory on the remote service !
+Author: Express#8049
+Remote service at : nc 51.254.39.184 1337
+ chip8 is a emulator-pwn challenge I did during the pwnme CTF . You can find the related files here.</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] Heap-hop</title>
+      <link>https://ret2school.github.io/post/heaphop/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/heaphop/</guid>
+      <description>Heap-Hop  Solves: 31 Medium
+Heap exploitation is cool, and the best is when no free is used. &amp;gt;Try to pwn the challenge and get the flag remotely.
+Note:
+ You must spawn an instance to solve this challenge. You can connect to it with netcat: nc IP PORT  Author: Express#8049
+Remote service at : nc 51.254.39.184 1336
+ Heap-hop is a heap exploitation challenge I did during the pwnme CTF.</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] vip</title>
+      <link>https://ret2school.github.io/post/vip/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/vip/</guid>
+      <description>VIP at libc  Sooo I heard that if you were VIP, you could access some specific features! Maybe one of those features can be used to get inside their system?
+INFO : This challenge need to spawn an instance, you can connect to it with netcat: nc IP PORT
+Author: Zerotistic#0001
+Remote service at : nc 51.254.39.184 1335
+ VIP at libc is a basic stack based buffer overflow challenge.</description>
+    </item>
+    
+    <item>
+      <title>[SECCON CTF 2022 Quals - pwn] babyfile</title>
+      <link>https://ret2school.github.io/post/babyfile/</link>
+      <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/babyfile/</guid>
+      <description>Introduction babyfile is a file stream exploitation I did during the SECCON CTF 2022 Quals event. I didn’t succeed to flag it within the 24 hours :(. But anyway I hope this write up will be interesting to read given I show another way to gain code execution &amp;ndash; I have not seen before &amp;ndash; based on _IO_obstack_jumps! The related files can be found here. If you&amp;rsquo;re not familiar with file stream internals, I advice you to read my previous writeups about file stream exploitation, especially this one and this other one.</description>
+    </item>
+    
+  </channel>
+</rss>

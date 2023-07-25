@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nasm on ret2school</title>
+    <link>https://ret2school.github.io/tags/nasm/</link>
+    <description>Recent content in nasm on ret2school</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/tags/nasm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[ImaginaryCTF 2023 - pwn] mailman</title>
+      <link>https://ret2school.github.io/post/mailman/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/mailman/</guid>
+      <description>mailman  mailman (423 pts) - 31 solves by Eth007
+Description
+I&amp;rsquo;m sure that my post office is 100% secure! It uses some of the latest software, unlike some of the other post offices out there&amp;hellip; Flag is in ./flag.txt.
+Attachments https://imaginaryctf.org/r/PIxtO#vuln https://imaginaryctf.org/r/c9Mk8#libc.so.6
+nc mailman.chal.imaginaryctf.org 1337
+ mailman is a heap challenge I did for the ImaginaryCTF 2023 event. It was a basic heap challenge involving tcache poisoning, safe-linking and seccomp bypass.</description>
+    </item>
+    
+    <item>
+      <title>[ImaginaryCTF 2023 - pwn] window-of-opportunity</title>
+      <link>https://ret2school.github.io/post/iwindow/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/iwindow/</guid>
+      <description>window-of-opportunity  window-of-opportunity (490 pts) - 11 solves by Eth007
+Description: Sometimes, there is a glimmer of hope, a spark of inspiration, a window of opportunity.
+Attachments https://imaginaryctf.org/r/izYM0#opportunity_dist.zip
+nc window-of-opportunity.chal.imaginaryctf.org 1337
+ window-of-opportunity is a kernel exploitation challenge I did for the ImaginaryCTF 2023. We are given an arbitrary read primitive (and a stack buffer overflow but I didn&amp;rsquo;t use it), and the goal is basically to read the /flag.txt file.</description>
+    </item>
+    
+    <item>
+      <title>[Grey Cat CTF Quals 2023 - pwn] Write me a Book</title>
+      <link>https://ret2school.github.io/post/writemeabook/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/writemeabook/</guid>
+      <description>Write me a book  Write me a Book 349
+Give back to the library! Share your thoughts and experiences!
+The flag can be found in /flag
+Elma
+nc 34.124.157.94 12346
+ Write me a book is a heap challenge I did during the Grey Cat The Flag 2023 Qualifiers. You can find the tasks and the exploit here.
+TL;DR To manage to read the flag we have to:
+ create overlapping chunks due to an oob write vulnerability in rewrite_books tcache poisoning thanks to the overlapping chunks Overwrite the first entry of @books to then be able to rewrite 4 entries of @books by setting a large size.</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] chip8</title>
+      <link>https://ret2school.github.io/post/chip8/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/chip8/</guid>
+      <description>chip8  Solves: 24 Easy
+I just found a repo of a chip-8 emulator, it may be vulnerable but I didn&amp;rsquo;t had enough time to report the vulnerability with a working PoC. You must find a way to get the flag in memory on the remote service !
+Author: Express#8049
+Remote service at : nc 51.254.39.184 1337
+ chip8 is a emulator-pwn challenge I did during the pwnme CTF . You can find the related files here.</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] Heap-hop</title>
+      <link>https://ret2school.github.io/post/heaphop/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/heaphop/</guid>
+      <description>Heap-Hop  Solves: 31 Medium
+Heap exploitation is cool, and the best is when no free is used. &amp;gt;Try to pwn the challenge and get the flag remotely.
+Note:
+ You must spawn an instance to solve this challenge. You can connect to it with netcat: nc IP PORT  Author: Express#8049
+Remote service at : nc 51.254.39.184 1336
+ Heap-hop is a heap exploitation challenge I did during the pwnme CTF.</description>
+    </item>
+    
+    <item>
+      <title>[pwnme 2023 - pwn] vip</title>
+      <link>https://ret2school.github.io/post/vip/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/vip/</guid>
+      <description>VIP at libc  Sooo I heard that if you were VIP, you could access some specific features! Maybe one of those features can be used to get inside their system?
+INFO : This challenge need to spawn an instance, you can connect to it with netcat: nc IP PORT
+Author: Zerotistic#0001
+Remote service at : nc 51.254.39.184 1335
+ VIP at libc is a basic stack based buffer overflow challenge.</description>
+    </item>
+    
+    <item>
+      <title>[SECCON CTF 2022 Quals - pwn] babyfile</title>
+      <link>https://ret2school.github.io/post/babyfile/</link>
+      <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/babyfile/</guid>
+      <description>Introduction babyfile is a file stream exploitation I did during the SECCON CTF 2022 Quals event. I didn’t succeed to flag it within the 24 hours :(. But anyway I hope this write up will be interesting to read given I show another way to gain code execution &amp;ndash; I have not seen before &amp;ndash; based on _IO_obstack_jumps! The related files can be found here. If you&amp;rsquo;re not familiar with file stream internals, I advice you to read my previous writeups about file stream exploitation, especially this one and this other one.</description>
+    </item>
+    
+    <item>
+      <title>[corCTF 2022 - pwn] zigzag</title>
+      <link>https://ret2school.github.io/post/zigzag/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/zigzag/</guid>
+      <description>Introduction zigzag is a zig heap challenge I did during the corCTF 2022 event. It was pretty exotic given we have to pwn a heap like challenge written in zig. It is not using the C allocator but instead it uses the GeneralPurposeAllocator, which makes the challenge even more interesting. Find the tasks here.
+TL; DR  Understanding zig GeneralPurposeAllocator internals Hiijack the BucketHeader of a given bucket to get a write what were / read what where primitive.</description>
+    </item>
+    
+    <item>
+      <title>[corCTF 2022 - pwn] cshell2</title>
+      <link>https://ret2school.github.io/post/cshell2/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cshell2/</guid>
+      <description>Introduction cshell2 is a heap challenge I did during the corCTF 2022 event. It was pretty classic so I will not describe a lot. If you begin with heap challenges, I advice you to read previous heap writeup.
+TL; DR  Fill tcache. Heap overflow in edit on the bio field which allows to leak the address of the unsortedbin. Leak heap and defeat safe-linking to get an arbitrary write through tcache poisoning.</description>
+    </item>
+    
+    <item>
+      <title>[diceCTF 2022 - pwn] catastrophe</title>
+      <link>https://ret2school.github.io/post/catastrophe/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/catastrophe/</guid>
+      <description>Introduction  I just learned how to use malloc and free&amp;hellip; am I doing this right?
+ catastrophe is a heap challenge I did during the diceCTF 2022. I did have a lot of issues with the libc and the dynamic linker, thus I did a first time the challenge with the libc that was in /lib/libc.so.6, then I figured out thanks to my teammate supersnail that I was using the wrong libc.</description>
+    </item>
+    
+    <item>
+      <title>[HackTheBox Cyber Apocalypse 2022 - pwn] Once and for all</title>
+      <link>https://ret2school.github.io/post/onceandforall/</link>
+      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/onceandforall/</guid>
+      <description>Once for all is a heap challenge I did during the HackTheBox Cyber Apocalypse event. This is a classic unsorted bin attack plus a FSOP on stdin. Find the tasks and the final exploit here and here.
+Reverse engineering All the snippets of pseudo-code are issued by IDA freeware:
+int __cdecl main(int argc, const char **argv, const char **envp) { int v4; // [rsp+18h] [rbp-8h] BYREF  int i; // [rsp+1Ch] [rbp-4h]  for ( i = 0; i &amp;lt;= 49; ++i ) { puts(s); printf(&amp;amp;unk_1310); __isoc99_scanf(&amp;amp;unk_13C8, &amp;amp;v4); puts(s); switch ( v4 ) { case 1: small_alloc(s); break; case 2: fix(s); break; case 3: examine(s); break; case 4: savebig(s); break; case 5: exit(0); default: puts(&amp;#34;[-] Invalid choice!</description>
+    </item>
+    
+    <item>
+      <title>[DCTF 2022 - pwn] phonebook</title>
+      <link>https://ret2school.github.io/post/phonebook/</link>
+      <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/phonebook/</guid>
+      <description>Intro phonebook is a basic heap challenge I did during the dctf event. It&amp;rsquo;s basically just a heap overflow wich allows us to overflow a function pointer with for example the address of system.
+The bug $ ./phonebook Choose an option: [1-5] 1. Store someone&#39;s information 2. Edit information 3. Call someone 4. Unfriend someone 5. Add the hidden_note &amp;gt; We can create an entity and then initialize: a name, a numero and a function pointer.</description>
+    </item>
+    
+    <item>
+      <title>[Breizh CTF 2022 - pwn] Faible Ty Reseau</title>
+      <link>https://ret2school.github.io/post/ftm/</link>
+      <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/ftm/</guid>
+      <description>Faible Ty Réseau is a basic heap-like challenge, it allows us to create a configuration, edit it, call a function pointer on it and finally to free it:
+int __cdecl main(int argc, const char **argv, const char **envp) { int v4; // [rsp+4h] [rbp-Ch] BYREF  unsigned __int64 v5; // [rsp+8h] [rbp-8h]  v5 = __readfsqword(0x28u); while ( 1 ) { puts(aVousN); printf(a1ModifierLesPa, argv); fflush(stdout); v4 = 0; argv = &amp;amp;v4; __isoc99_scanf(&amp;amp;unk_21F3, &amp;amp;v4); switch ( v4 ) { case 0: printf(&amp;#34;wtf ?</description>
+    </item>
+    
+    <item>
+      <title>[TRACS 2021 - RE] Coffre</title>
+      <link>https://ret2school.github.io/post/safe/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/safe/</guid>
+      <description>Intro  Epreuve 12-3 – Coffre En tant que stagiaire vous avez accès aux locaux de la NSB. Vous allez collecter des informations dans les locaux. Un coffre est présent dans les locaux en salle rideau. Il appartient à Richard Cresus de la Tune. Essayez d’ouvrir ce coffre. Quel est l’IBAN contenu dans le coffre ? Format de la réponse : IBAN sans séparateur.
+ Basically, we have to crack open an electronic safe.</description>
+    </item>
+    
+    <item>
+      <title>[Hack.lu 2021 - pwn] Cloudinspect</title>
+      <link>https://ret2school.github.io/post/cloudinspect/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cloudinspect/</guid>
+      <description>CloudInspect CloundInpect was a hypervisor exploitation challenge I did for the Hack.lu event. I didn&amp;rsquo;t succeed to flag it within the 48 hours :(. But anyway I hope this write up will be interesting to read! The related files can be found right here
+ After Whiterock released it&amp;rsquo;s trading bot cloud with special Stonks Sockets another hedge fund, Castel, comes with some competition. The special feature here is called &amp;ldquo;cloudinspect&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>[ASIS CTF QUALS 2021 - pwn] abbr &amp; justpwnit</title>
+      <link>https://ret2school.github.io/post/pwnasis/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/pwnasis/</guid>
+      <description>Hello folks ! Here is a write up for the two first pwn challenges of the ASIS CTF. You can find the related files here.
+justpwnit justpwnit was a warmup pwn challenge. That&amp;rsquo;s only a basic stack overflow. The binary is statically linked and here is the checksec&amp;rsquo;s output:
+[*] &#39;/home/nasm/justpwnit&#39; Arch: amd64-64-little RELRO: Partial RELRO Stack: No canary found NX: NX enabled PIE: No PIE (0x400000) Morever the source code is provided as it is the case for all the pwn tasks !</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Blind Date</title>
+      <link>https://ret2school.github.io/post/blindate/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/blindate/</guid>
+      <description>Blind Date (489 pts)  Une société souhaite créer un service en ligne protégeant les informations de ses clients. Pouvez-vous leur montrer qu&amp;rsquo;elle n&amp;rsquo;est pas sûre en lisant le fichier flag.txt sur leur serveur ? Les gérants de cette société n&amp;rsquo;ont pas souhaité vous donner ni le code source de leur solution, ni le binaire compilé, mais ils vous proposent uniquement un accès distant à leur service.
+  nc challenges2.</description>
+    </item>
+    
+    <item>
+      <title>[FCSC 2021 - pwn] Itsy Mipsy router</title>
+      <link>https://ret2school.github.io/post/mipsy/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/mipsy/</guid>
+      <description>Itsy Mipsy Router (200 pts) Itsy Mipsy Router is a pwn challenge I did during the FCSC event. It&amp;rsquo;s not a very hard challenge but I found it very interesting because it was my first mips pwn challenge !
+Setup So basically we got this:
+ On vous demander d&amp;rsquo;auditer un routeur à l&amp;rsquo;interface entre Internet et un réseau interne d&amp;rsquo;une entreprise. Le client vous demande si il est possible de lire les fichiers stockés sur la machine filer qui sert de serveur de fichiers HTTP.</description>
+    </item>
+    
+    <item>
+      <title>[UnionCTF 2021 - pwn] babyrarf</title>
+      <link>https://ret2school.github.io/post/babyrarf/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/babyrarf/</guid>
+      <description>The binary can be found right here.
+[UnionCTF] Babyrarf Welcome guys,
+This Write-Up is about de first pwn challenge of unionctf: babyrarf. It was a really easy challenge with a stack based buffer overflow. The source code was provided so, no need to reverse the binary :).
+Let&amp;rsquo;s take a look at the src!
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;#include &amp;lt;stdint.h&amp;gt;#include &amp;lt;unistd.h&amp;gt; typedef struct attack { uint64_t id; uint64_t dmg; } attack; typedef struct character { char name[10]; int health; } character; uint8_t score; int read_int(){ char buf[10]; fgets(buf, 10, stdin); return atoi(buf); } void get_shell(){ execve(&amp;#34;/bin/sh&amp;#34;, NULL, NULL); } attack choose_attack(){ attack a; int id; puts(&amp;#34;Choose an attack:\n&amp;#34;); puts(&amp;#34;1.</description>
+    </item>
+    
+  </channel>
+</rss>

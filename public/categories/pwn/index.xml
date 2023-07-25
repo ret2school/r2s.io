@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pwn on ret2school</title>
+    <link>https://ret2school.github.io/categories/pwn/</link>
+    <description>Recent content in pwn on ret2school</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ret2school.github.io/categories/pwn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[ImaginaryCTF 2023 - pwn] mailman</title>
+      <link>https://ret2school.github.io/post/mailman/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/mailman/</guid>
+      <description>mailman  mailman (423 pts) - 31 solves by Eth007
+Description
+I&amp;rsquo;m sure that my post office is 100% secure! It uses some of the latest software, unlike some of the other post offices out there&amp;hellip; Flag is in ./flag.txt.
+Attachments https://imaginaryctf.org/r/PIxtO#vuln https://imaginaryctf.org/r/c9Mk8#libc.so.6
+nc mailman.chal.imaginaryctf.org 1337
+ mailman is a heap challenge I did for the ImaginaryCTF 2023 event. It was a basic heap challenge involving tcache poisoning, safe-linking and seccomp bypass.</description>
+    </item>
+    
+    <item>
+      <title>[ImaginaryCTF 2023 - pwn] window-of-opportunity</title>
+      <link>https://ret2school.github.io/post/iwindow/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/iwindow/</guid>
+      <description>window-of-opportunity  window-of-opportunity (490 pts) - 11 solves by Eth007
+Description: Sometimes, there is a glimmer of hope, a spark of inspiration, a window of opportunity.
+Attachments https://imaginaryctf.org/r/izYM0#opportunity_dist.zip
+nc window-of-opportunity.chal.imaginaryctf.org 1337
+ window-of-opportunity is a kernel exploitation challenge I did for the ImaginaryCTF 2023. We are given an arbitrary read primitive (and a stack buffer overflow but I didn&amp;rsquo;t use it), and the goal is basically to read the /flag.txt file.</description>
+    </item>
+    
+    <item>
+      <title>[corCTF 2022 - pwn] zigzag</title>
+      <link>https://ret2school.github.io/post/zigzag/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/zigzag/</guid>
+      <description>Introduction zigzag is a zig heap challenge I did during the corCTF 2022 event. It was pretty exotic given we have to pwn a heap like challenge written in zig. It is not using the C allocator but instead it uses the GeneralPurposeAllocator, which makes the challenge even more interesting. Find the tasks here.
+TL; DR  Understanding zig GeneralPurposeAllocator internals Hiijack the BucketHeader of a given bucket to get a write what were / read what where primitive.</description>
+    </item>
+    
+    <item>
+      <title>[corCTF 2022 - pwn] cshell2</title>
+      <link>https://ret2school.github.io/post/cshell2/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ret2school.github.io/post/cshell2/</guid>
+      <description>Introduction cshell2 is a heap challenge I did during the corCTF 2022 event. It was pretty classic so I will not describe a lot. If you begin with heap challenges, I advice you to read previous heap writeup.
+TL; DR  Fill tcache. Heap overflow in edit on the bio field which allows to leak the address of the unsortedbin. Leak heap and defeat safe-linking to get an arbitrary write through tcache poisoning.</description>
+    </item>
+    
+  </channel>
+</rss>

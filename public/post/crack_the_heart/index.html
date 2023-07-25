@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>[UTCTF 2020 - RE] Crack the heart // ret2school</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="nasm" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[UTCTF 2020 - RE] Crack the heart"/>
+<meta name="twitter:description" content="Author: supersnail
+For this challenge, I first noticed (like in every other writeups) a big structure of offsets, that pointed to &ldquo;funclets&rdquo; followed by jump with rcx-relative offsets.
+The relative jump function:
+The first funclet just checks for the process being debugged, the &ldquo;load_r9&rdquo; funclet that jumps to the next funclet after skipping &ldquo;n&rdquo; bytes of garbage. Then the crackme calls a funclet &ldquo;write_message&rdquo; with the parameters (offset to &ldquo;Why should I go out with you?"/>
+
+    <meta property="og:title" content="[UTCTF 2020 - RE] Crack the heart" />
+<meta property="og:description" content="Author: supersnail
+For this challenge, I first noticed (like in every other writeups) a big structure of offsets, that pointed to &ldquo;funclets&rdquo; followed by jump with rcx-relative offsets.
+The relative jump function:
+The first funclet just checks for the process being debugged, the &ldquo;load_r9&rdquo; funclet that jumps to the next funclet after skipping &ldquo;n&rdquo; bytes of garbage. Then the crackme calls a funclet &ldquo;write_message&rdquo; with the parameters (offset to &ldquo;Why should I go out with you?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ret2school.github.io/post/crack_the_heart/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-11-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-25T00:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://ret2school.github.io"><img class="app-header-avatar" src="/pic.jpeg" alt="nasm" /></a>
+      <span class="app-header-title">ret2school</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/post/list_team/">About</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>Just a bunch of french ctf players</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">[UTCTF 2020 - RE] Crack the heart</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 25, 2020
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://ret2school.github.io/tags/ctf/">ctf</a>
+              <a class="tag" href="https://ret2school.github.io/tags/ret2school/">ret2school</a>
+              <a class="tag" href="https://ret2school.github.io/tags/utctf/">UTCTF</a>
+              <a class="tag" href="https://ret2school.github.io/tags/re/">RE</a>
+              <a class="tag" href="https://ret2school.github.io/tags/supersnail/">supersnail</a>
+              <a class="tag" href="https://ret2school.github.io/tags/aassfxxx/">aaSSfxxx</a>
+              <a class="tag" href="https://ret2school.github.io/tags/2020/">2020</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><a href="http://aassfxxx.infos.st/">Author: supersnail</a></p>
+<p>For this challenge, I first noticed (like in every other writeups) a big structure of offsets, that pointed to &ldquo;funclets&rdquo; followed by jump with rcx-relative offsets.</p>
+<p><img src="http://aassfxxx.infos.st/media/crack-the-heart/offsettbl.png" alt="Offset table"></p>
+<p>The relative jump function:</p>
+<p><img src="http://aassfxxx.infos.st/media/crack-the-heart/nextoffset.png" alt="Next offset"></p>
+<p>The first funclet just checks for the process being debugged, the &ldquo;load_r9&rdquo; funclet that jumps to the next funclet after skipping &ldquo;n&rdquo; bytes of garbage. Then the crackme calls a funclet &ldquo;write_message&rdquo; with the parameters (offset to &ldquo;Why should I go out with you?&rdquo; message and its size) stored after the function offset.</p>
+<p>Then we can see funclets that xor registers, move data from offsets, and seem to perform some sort of &ldquo;key scheduling&rdquo;, which made me to think about that good old RC4 encryption scheme.
+Studying the crackme confirmed my doubts, we have an obfuscated &ldquo;keyState&rdquo;, which is basically a table of pointers containing the actual table:</p>
+<p><img src="http://aassfxxx.infos.st/media/crack-the-heart/keystate.png" alt="Key state"></p>
+<p>The key is also obfuscated inside garbage bytes, and each key byte is referenced by the second &ldquo;set_rsi_param&rdquo; call for each key-scheduling block for each key character. To  confuse the reverser, the key is also 255 bytes long, and contain non-printable characters.</p>
+<p>Now, since we located the key and the algorithm used, we need to locate where the encrypted data (probably the flag) is located. After a little debugging with radare2 (and a a breakpoint on the &ldquo;write_message&rdquo; function), I finally located it in the offset table</p>
+<p><img src="http://aassfxxx.infos.st/media/crack-the-heart/keyloc.png" alt="Key state">.</p>
+<p>Given this, I wrote a script relying a lot on r2pipe to crack the crackme and get the flag:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#6272a4">#!/usr/bin/python</span>
+<span style="color:#ff79c6">import</span> r2pipe
+<span style="color:#ff79c6">import</span> struct
+<span style="color:#ff79c6">from</span> Crypto.Cipher <span style="color:#ff79c6">import</span> ARC4
+
+rop_buf <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0x4045A6</span>
+
+r9_caution <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0x4021FD</span>
+rsi_param <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0x402102</span>
+and_param <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0x402065</span>
+
+r2 <span style="color:#ff79c6">=</span> r2pipe<span style="color:#ff79c6">.</span>open(<span style="color:#f1fa8c">&#34;./crackme&#34;</span>)
+
+is_key_loading <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>
+count <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+key <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">b</span><span style="color:#f1fa8c">&#34;&#34;</span>
+
+<span style="color:#ff79c6">while</span> count <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">256</span>:
+    buf <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">bytes</span>(r2<span style="color:#ff79c6">.</span>cmdj(<span style="color:#f1fa8c">&#34;pxj 8 @0x</span><span style="color:#f1fa8c">%x</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">%</span> rop_buf))
+    addr <span style="color:#ff79c6">=</span> struct<span style="color:#ff79c6">.</span>unpack(<span style="color:#f1fa8c">&#34;&lt;Q&#34;</span>, buf)[<span style="color:#bd93f9">0</span>]
+    <span style="color:#ff79c6">if</span> addr <span style="color:#ff79c6">==</span> rsi_param:
+        <span style="color:#ff79c6">if</span> is_key_loading:
+            buf <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">bytes</span>(r2<span style="color:#ff79c6">.</span>cmdj(<span style="color:#f1fa8c">&#34;pxj 8 @0x</span><span style="color:#f1fa8c">%x</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">%</span> (rop_buf <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">8</span>)))
+            addr <span style="color:#ff79c6">=</span> struct<span style="color:#ff79c6">.</span>unpack(<span style="color:#f1fa8c">&#34;&lt;Q&#34;</span>, buf)
+            key <span style="color:#ff79c6">+=</span> <span style="color:#8be9fd;font-style:italic">bytes</span>(r2<span style="color:#ff79c6">.</span>cmdj(<span style="color:#f1fa8c">&#34;pxj 1 @0x</span><span style="color:#f1fa8c">%x</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">%</span> addr))
+            count <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+            is_key_loading <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">False</span>
+        <span style="color:#ff79c6">else</span>:
+            is_key_loading <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>
+        rop_buf <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">8</span>
+    <span style="color:#ff79c6">elif</span> addr <span style="color:#ff79c6">==</span> and_param:
+        rop_buf <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">8</span>
+    <span style="color:#ff79c6">elif</span> addr <span style="color:#ff79c6">==</span> r9_caution:
+        rop_buf <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">8</span> <span style="color:#ff79c6">+</span> r2<span style="color:#ff79c6">.</span>cmdj(<span style="color:#f1fa8c">&#34;pxj 1 @0x</span><span style="color:#f1fa8c">%x</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">%</span> (rop_buf <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">8</span>))[<span style="color:#bd93f9">0</span>]
+    rop_buf <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">8</span>
+<span style="color:#8be9fd;font-style:italic">print</span>(key)
+
+data <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0x4022D5</span>
+buf <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">bytes</span>(r2<span style="color:#ff79c6">.</span>cmdj(<span style="color:#f1fa8c">&#34;pxj 256 @0x</span><span style="color:#f1fa8c">%x</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">%</span> data))
+cipher <span style="color:#ff79c6">=</span> ARC4<span style="color:#ff79c6">.</span>new(key)
+<span style="color:#8be9fd;font-style:italic">print</span>(cipher<span style="color:#ff79c6">.</span>encrypt(buf))
+
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
