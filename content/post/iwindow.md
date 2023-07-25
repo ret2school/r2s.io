@@ -1,7 +1,7 @@
 ---
 title: "[ImaginaryCTF 2023 - pwn] window-of-opportunity"
 date: 2023-07-24
-tags: ["ctf", "corCTF", "2022", "kernel", "nasm", "pwn"]
+tags: ["ctf", "ImaginaryCTF", "2023", "kernel", "nasm", "pwn"]
 categories: "pwn"
 authors:
   - nasm
